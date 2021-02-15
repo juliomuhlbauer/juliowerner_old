@@ -13,15 +13,18 @@ import { ArrowBackIcon } from "@chakra-ui/icons";
 export default function Nav({ children }) {
   return (
     <>
-      <Flex my={4} alignItems="center" justifyContent="space-around">
-        <NextLink href="/">
-          <Link>
-            <IconButton
-              variant="outline"
-              colorScheme="gradient"
-              icon={<ArrowBackIcon />}
-            />
-          </Link>
+      <Flex
+        as="header"
+        my={4}
+        alignItems="center"
+        justifyContent="space-around"
+      >
+        <NextLink href="javascript:history.back()">
+          <IconButton
+            variant="outline"
+            colorScheme="gradient"
+            icon={<ArrowBackIcon />}
+          />
         </NextLink>
         <Heading
           as="h1"

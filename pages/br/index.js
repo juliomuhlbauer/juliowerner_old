@@ -35,18 +35,18 @@ export default function Home() {
             </Center>
             <Center>
               <Stack spacing={4} direction="row">
-                <NextLink href="services">
-                  <Button>Services</Button>
+                <NextLink href="br/servicos">
+                  <Button>Serviços</Button>
                 </NextLink>
-                <NextLink href="projects">
-                  <Button>Projects</Button>
+                <NextLink href="br/projetos">
+                  <Button>Projetos</Button>
                 </NextLink>
-                <NextLink href="about">
-                  <Button>About</Button>
+                <NextLink href="br/sobre">
+                  <Button>Sobre</Button>
                 </NextLink>
-                <NextLink href="contact">
+                <NextLink href="br/contato">
                   <Button variant="outline" colorScheme="gradient">
-                    Contact
+                    Contato
                   </Button>
                 </NextLink>
               </Stack>
