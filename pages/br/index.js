@@ -10,6 +10,7 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import Animation from "components/animation";
+import ReactCountryFlag from "react-country-flag";
 
 export default function Home() {
   return (
@@ -47,6 +48,20 @@ export default function Home() {
                 <NextLink href="br/contato">
                   <Button variant="outline" colorScheme="gradient">
                     Contato
+                  </Button>
+                </NextLink>
+              </Stack>
+            </Center>
+            <Center>
+              <Stack spacing={4} direction="row">
+                <NextLink href="/">
+                  <Button leftIcon={<ReactCountryFlag countryCode="US" svg />}>
+                    EN
+                  </Button>
+                </NextLink>
+                <NextLink href="br">
+                  <Button leftIcon={<ReactCountryFlag countryCode="BR" svg />}>
+                    PT
                   </Button>
                 </NextLink>
               </Stack>
