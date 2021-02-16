@@ -7,18 +7,16 @@ import {
   IconButton,
   Heading,
   Flex,
+  Spacer,
+  Box,
+  Center,
 } from "@chakra-ui/react";
 import { ArrowBackIcon } from "@chakra-ui/icons";
 
 export default function Nav({ children }) {
   return (
     <>
-      <Flex
-        as="header"
-        my={4}
-        alignItems="center"
-        justifyContent="space-around"
-      >
+      <Flex as="header" m={4} alignItems="center" justify="space-around">
         <NextLink href="javascript:history.back()">
           <IconButton
             variant="outline"
@@ -26,6 +24,7 @@ export default function Nav({ children }) {
             icon={<ArrowBackIcon />}
           />
         </NextLink>
+        <Spacer />
         <Heading
           as="h1"
           bgGradient="linear(to-r, gradient.100,gradient.200)"
@@ -35,9 +34,7 @@ export default function Nav({ children }) {
         >
           {children}
         </Heading>
-        <Button variant="outline" colorScheme="gradient">
-          Contato
-        </Button>
+        <Spacer />
       </Flex>
     </>
   );

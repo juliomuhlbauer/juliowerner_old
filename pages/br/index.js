@@ -5,12 +5,19 @@ import {
   Box,
   Button,
   Center,
+  Flex,
   Heading,
   LinkOverlay,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Spacer,
   Stack,
 } from "@chakra-ui/react";
 import Animation from "components/animation";
 import ReactCountryFlag from "react-country-flag";
+import { CheckIcon, ChevronDownIcon } from "@chakra-ui/icons";
 
 export default function Home() {
   return (
@@ -19,7 +26,36 @@ export default function Home() {
         <title>Júlio Werner</title>
         <link rel="icon" href="/Logo.svg" />
       </Head>
-      <Center h="100vh">
+      <Animation>
+        <Flex my={8} mx={12}>
+          <Spacer />
+          <Menu>
+            <MenuButton
+              as={Button}
+              leftIcon={<ReactCountryFlag countryCode="BR" svg />}
+              rightIcon={<ChevronDownIcon />}
+            >
+              PT
+            </MenuButton>
+            <MenuList>
+              <NextLink href="/">
+                <MenuItem icon={<ReactCountryFlag countryCode="US" svg />}>
+                  English
+                </MenuItem>
+              </NextLink>
+              <NextLink href="br">
+                <MenuItem
+                  icon={<ReactCountryFlag countryCode="BR" svg />}
+                  command={<CheckIcon />}
+                >
+                  Português
+                </MenuItem>
+              </NextLink>
+            </MenuList>
+          </Menu>
+        </Flex>
+      </Animation>
+      <Center h="75vh">
         <Animation>
           <Stack spacing={4}>
             <Center>
@@ -48,20 +84,6 @@ export default function Home() {
                 <NextLink href="br/contato">
                   <Button variant="outline" colorScheme="gradient">
                     Contato
-                  </Button>
-                </NextLink>
-              </Stack>
-            </Center>
-            <Center>
-              <Stack spacing={4} direction="row">
-                <NextLink href="/">
-                  <Button leftIcon={<ReactCountryFlag countryCode="US" svg />}>
-                    EN
-                  </Button>
-                </NextLink>
-                <NextLink href="br">
-                  <Button leftIcon={<ReactCountryFlag countryCode="BR" svg />}>
-                    PT
                   </Button>
                 </NextLink>
               </Stack>
