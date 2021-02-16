@@ -27,36 +27,38 @@ export default function Home() {
         <link rel="icon" href="/Logo.svg" />
       </Head>
       <Animation>
-        <Flex as="header" my={8} mx={12}>
-          <Spacer />
-          <Menu>
-            <MenuButton
-              as={Button}
-              leftIcon={<ReactCountryFlag countryCode="US" svg />}
-              rightIcon={<ChevronDownIcon />}
-            >
-              EN
-            </MenuButton>
-            <MenuList>
-              <NextLink href="/">
-                <MenuItem
-                  icon={<ReactCountryFlag countryCode="US" svg />}
-                  command={<CheckIcon />}
-                >
-                  English
-                </MenuItem>
-              </NextLink>
-              <NextLink href="br">
-                <MenuItem icon={<ReactCountryFlag countryCode="BR" svg />}>
-                  Português
-                </MenuItem>
-              </NextLink>
-            </MenuList>
-          </Menu>
-        </Flex>
+        <Box as="header" pos="fixed" w="100vw">
+          <Flex my={8} mx={12}>
+            <Spacer />
+            <Menu>
+              <MenuButton
+                as={Button}
+                leftIcon={<ReactCountryFlag countryCode="US" svg />}
+                rightIcon={<ChevronDownIcon />}
+              >
+                EN
+              </MenuButton>
+              <MenuList>
+                <NextLink href="/">
+                  <MenuItem
+                    icon={<ReactCountryFlag countryCode="US" svg />}
+                    command={<CheckIcon />}
+                  >
+                    English
+                  </MenuItem>
+                </NextLink>
+                <NextLink href="br">
+                  <MenuItem icon={<ReactCountryFlag countryCode="BR" svg />}>
+                    Português
+                  </MenuItem>
+                </NextLink>
+              </MenuList>
+            </Menu>
+          </Flex>
+        </Box>
       </Animation>
 
-      <Center h="75vh">
+      <Center h="100vh">
         <Animation>
           <Stack spacing={4}>
             <Center>
