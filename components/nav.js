@@ -40,17 +40,19 @@ export default function Nav({ children }) {
 
       <Box
         display={{ base: "block", md: "none" }}
-        pos="absolute"
-        top="85vh"
-        ml={16}
+        pos="fixed"
+        bottom="10vh"
+        m={16}
       >
         <NextLink href="javascript:history.back()">
-          <IconButton
-            size="lg"
-            colorScheme="gradient"
-            icon={<ArrowBackIcon />}
-            isRound
-          />
+          <Box>
+            <IconButton
+              size="lg"
+              colorScheme="gradient"
+              icon={<ArrowBackIcon />}
+              isRound
+            />
+          </Box>
         </NextLink>
       </Box>
     </>
