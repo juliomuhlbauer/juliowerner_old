@@ -18,6 +18,7 @@ import {
 import Animation from "components/animation";
 import ReactCountryFlag from "react-country-flag";
 import { CheckIcon, ChevronDownIcon } from "@chakra-ui/icons";
+import Opacity from "components/opacity";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
         <title>Júlio Werner</title>
         <link rel="icon" href="/Logo.svg" />
       </Head>
-      <Animation>
+      <Opacity>
         <Box as="header" pos="fixed" w="100vw">
           <Flex my={8} mx={12}>
             <Spacer />
@@ -56,7 +57,7 @@ export default function Home() {
             </Menu>
           </Flex>
         </Box>
-      </Animation>
+      </Opacity>
 
       <Center h="100vh">
         <Animation>

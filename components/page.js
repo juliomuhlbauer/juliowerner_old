@@ -10,10 +10,8 @@ export default function Page(props) {
         <link rel="icon" href="/Logo.svg" />
       </Head>
 
-      <Animation>
-        <Nav>{props.title} </Nav>
-        {props.children}
-      </Animation>
+      <Nav>{props.title} </Nav>
+      <Animation>{props.children}</Animation>
     </>
   );
 }

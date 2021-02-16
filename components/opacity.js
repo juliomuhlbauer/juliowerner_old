@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function Animation(props) {
+export default function Opacity(props) {
   return (
     <motion.div
       layout="position"
@@ -9,11 +9,9 @@ export default function Animation(props) {
       variants={{
         initial: {
           opacity: 0,
-          y: 50,
         },
         animate: {
           opacity: 1,
-          y: 0,
         },
       }}
       transition={{ duration: 1, type: "spring", bounce: 0 }}
