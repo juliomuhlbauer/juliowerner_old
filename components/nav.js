@@ -40,9 +40,9 @@ export default function Nav({ children }) {
 
       <Box
         display={{ base: "block", md: "none" }}
-        pos="fixed"
-        bottom="50px"
-        left="50px"
+        pos="absolute"
+        top="85vh"
+        ml={16}
       >
         <NextLink href="javascript:history.back()">
           <IconButton
