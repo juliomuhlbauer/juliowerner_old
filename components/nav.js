@@ -41,10 +41,8 @@ export default function Nav({ children }) {
       <Box
         display={{ base: "block", md: "none" }}
         pos="fixed"
-        m={8}
-        bottom="0"
-        left="0"
-        boxShadow="2xl"
+        bottom="50px"
+        left="50px"
       >
         <NextLink href="javascript:history.back()">
           <IconButton

@@ -15,7 +15,7 @@ export default function Animation({ children }) {
           y: 0,
         },
       }}
-      transition={{ type: "spring", bounce: 0 }}
+      transition={{ duration: 1, type: "spring", bounce: 0 }}
     >
       {children}
     </motion.div>
