@@ -19,6 +19,7 @@ export default function Nav({ children }) {
       <Flex as="header" m={4} alignItems="center" justify="space-around">
         <NextLink href="javascript:history.back()">
           <IconButton
+            display={{ base: "none", md: "block" }}
             variant="outline"
             colorScheme="gradient"
             icon={<ArrowBackIcon />}
@@ -36,6 +37,24 @@ export default function Nav({ children }) {
         </Heading>
         <Spacer />
       </Flex>
+
+      <Box
+        display={{ base: "block", md: "none" }}
+        pos="fixed"
+        m={8}
+        bottom="0"
+        left="0"
+        boxShadow="2xl"
+      >
+        <NextLink href="javascript:history.back()">
+          <IconButton
+            size="lg"
+            colorScheme="gradient"
+            icon={<ArrowBackIcon />}
+            isRound
+          />
+        </NextLink>
+      </Box>
     </>
   );
 }
