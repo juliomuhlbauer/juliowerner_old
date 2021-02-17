@@ -3,14 +3,7 @@ import customTheme from "styles/theme";
 function MyApp({ Component, pageProps, router }) {
   return (
     <ChakraProvider resetCSS theme={customTheme}>
-      <ColorModeProvider
-        options={{
-          initialColorMode: "dark",
-          useSystemColorMode: false,
-        }}
-      >
-        <Component {...pageProps} />
-      </ColorModeProvider>
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 }

@@ -7,6 +7,7 @@ import {
   Center,
   Flex,
   Heading,
+  IconButton,
   LinkOverlay,
   Menu,
   MenuButton,
@@ -14,12 +15,20 @@ import {
   MenuList,
   Spacer,
   Stack,
+  useColorMode,
 } from "@chakra-ui/react";
 import Animation from "components/animation";
 import ReactCountryFlag from "react-country-flag";
-import { CheckIcon, ChevronDownIcon } from "@chakra-ui/icons";
+import {
+  CheckIcon,
+  ChevronDownIcon,
+  MoonIcon,
+  SunIcon,
+} from "@chakra-ui/icons";
 
 export default function Home() {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <>
       <Head>
@@ -29,6 +38,10 @@ export default function Home() {
       <Animation>
         <Box as="header" pos="fixed" w="100vw">
           <Flex my={8} mx={12}>
+            <IconButton
+              icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+              onClick={toggleColorMode}
+            ></IconButton>
             <Spacer />
             <Menu>
               <MenuButton
