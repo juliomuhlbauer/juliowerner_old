@@ -81,7 +81,7 @@ export default function Home() {
                 textAlign="center"
                 bgGradient="linear(to-r, pallete.600,pallete.200)"
                 bgClip="text"
-                fontSize="6xl"
+                fontSize={{ base: "5xl", sm: "6xl" }}
                 fontWeight="extrabold"
               >
                 Júlio Werner
@@ -97,11 +97,6 @@ export default function Home() {
                 </NextLink>
                 <NextLink href="about">
                   <Button>About</Button>
-                </NextLink>
-                <NextLink href="contact">
-                  <Button variant="outline" colorScheme="pallete">
-                    Contact
-                  </Button>
                 </NextLink>
               </Stack>
             </Center>

@@ -9,10 +9,10 @@ export default function Servicos() {
         <Wrap m={4} justify="center" spacing={12}>
           <Card
             title="Planejamento de Négocio"
-            image="/services/Business.svg"
+            image="/services/Business.png"
           />
-          <Card title="Construção de Marca" image="/services/Brand.svg" />
-          <Card title="Implementação" image="/services/Deploy.svg" />
+          <Card title="Construção de Marca" image="/services/Brand.png" />
+          <Card title="Implementação" image="/services/Deploy.png" />
         </Wrap>
       </Center>
     </Page>

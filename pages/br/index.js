@@ -86,7 +86,7 @@ export default function Home() {
               </Heading>
             </Center>
             <Center>
-              <Stack spacing={4} direction={{ base: "column", sm: "row" }}>
+              <Stack spacing={4} direction="row">
                 <NextLink href="br/servicos">
                   <Button>Serviços</Button>
                 </NextLink>
@@ -96,11 +96,14 @@ export default function Home() {
                 <NextLink href="br/sobre">
                   <Button>Sobre</Button>
                 </NextLink>
-                <NextLink href="br/contato">
-                  <Button variant="outline" colorScheme="pallete">
-                    Contato
-                  </Button>
-                </NextLink>
+              </Stack>
+            </Center>
+            <Center>
+              <Stack spacing={4} direction="row">
+                <Button
+                  as="a"
+                  href="https://www.instagram.com/juliowernermm/"
+                ></Button>
               </Stack>
             </Center>
           </Stack>
