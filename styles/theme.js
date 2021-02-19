@@ -10,10 +10,18 @@ const customTheme = extendTheme({
     body: "Inter, sans-serif",
     heading: "Inter, sans-serif",
   },
+
   colors: {
-    gradient: {
-      100: "#ff554b",
-      200: "#f9c529",
+    pallete: {
+      100: "#f9c529",
+      200: "#f9c529", //Dark
+      300: "#f9c529",
+      400: "#f9c529",
+      500: "#ff554b",
+      600: "#ff554b", //Light
+      700: "#ff554b",
+      800: "#ff554b",
+      900: "#ff554b",
     },
   },
 });

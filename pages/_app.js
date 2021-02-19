@@ -1,4 +1,5 @@
-import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
+import "styles/styles.css";
+import { ChakraProvider } from "@chakra-ui/react";
 import customTheme from "styles/theme";
 function MyApp({ Component, pageProps, router }) {
   return (

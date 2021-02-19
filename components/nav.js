@@ -10,6 +10,7 @@ import {
   Spacer,
   Box,
   Center,
+  Portal,
 } from "@chakra-ui/react";
 import { ArrowBackIcon } from "@chakra-ui/icons";
 import Animation from "components/animation";
@@ -24,14 +25,14 @@ export default function Nav({ children }) {
             <IconButton
               display={{ base: "none", md: "block" }}
               variant="outline"
-              colorScheme="gradient"
+              colorScheme="pallete"
               icon={<ArrowBackIcon />}
             />
           </NextLink>
           <Spacer />
           <Heading
             as="h1"
-            bgGradient="linear(to-r, gradient.100,gradient.200)"
+            bgGradient="linear(to-r, pallete.600,pallete.200)"
             bgClip="text"
             fontSize="5xl"
             fontWeight="bold"
@@ -41,25 +42,27 @@ export default function Nav({ children }) {
           <Spacer />
         </Flex>
       </Animation>
-      <Opacity>
-        <Box
-          display={{ base: "block", md: "none" }}
-          pos="fixed"
-          bottom="10vh"
-          ml={16}
-        >
-          <NextLink href="javascript:history.back()">
-            <Box>
-              <IconButton
-                size="lg"
-                colorScheme="gradient"
-                icon={<ArrowBackIcon />}
-                isRound
-              />
-            </Box>
-          </NextLink>
-        </Box>
-      </Opacity>
+      <Portal>
+        <Opacity>
+          <Box
+            display={{ base: "block", md: "none" }}
+            pos="fixed"
+            bottom="10vh"
+            ml={16}
+          >
+            <NextLink href="javascript:history.back()">
+              <Box>
+                <IconButton
+                  size="lg"
+                  colorScheme="pallete"
+                  icon={<ArrowBackIcon />}
+                  isRound
+                />
+              </Box>
+            </NextLink>
+          </Box>
+        </Opacity>
+      </Portal>
     </>
   );
 }

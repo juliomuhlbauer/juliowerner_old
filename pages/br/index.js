@@ -77,16 +77,16 @@ export default function Home() {
               <Heading
                 as="h1"
                 textAlign="center"
-                bgGradient="linear(to-r, gradient.100,gradient.200)"
+                bgGradient="linear(to-r, pallete.600,pallete.200)"
                 bgClip="text"
-                fontSize="6xl"
+                fontSize={{ base: "5xl", sm: "6xl" }}
                 fontWeight="extrabold"
               >
                 Júlio Werner
               </Heading>
             </Center>
             <Center>
-              <Stack spacing={4} direction="row">
+              <Stack spacing={4} direction={{ base: "column", sm: "row" }}>
                 <NextLink href="br/servicos">
                   <Button>Serviços</Button>
                 </NextLink>
@@ -97,7 +97,7 @@ export default function Home() {
                   <Button>Sobre</Button>
                 </NextLink>
                 <NextLink href="br/contato">
-                  <Button variant="outline" colorScheme="gradient">
+                  <Button variant="outline" colorScheme="pallete">
                     Contato
                   </Button>
                 </NextLink>

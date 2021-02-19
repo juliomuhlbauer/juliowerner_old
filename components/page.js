@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Nav from "components/nav";
 import Animation from "components/animation";
+import { Box, Center } from "@chakra-ui/react";
 
 export default function Page(props) {
   return (
@@ -11,7 +12,11 @@ export default function Page(props) {
       </Head>
 
       <Nav>{props.title} </Nav>
-      <Animation>{props.children}</Animation>
+      <Center as="main">
+        <Box w="90vw" maxW="100%">
+          <Animation>{props.children}</Animation>
+        </Box>
+      </Center>
     </>
   );
 }

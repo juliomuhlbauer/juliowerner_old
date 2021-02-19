@@ -79,7 +79,7 @@ export default function Home() {
               <Heading
                 as="h1"
                 textAlign="center"
-                bgGradient="linear(to-r, gradient.100,gradient.200)"
+                bgGradient="linear(to-r, pallete.600,pallete.200)"
                 bgClip="text"
                 fontSize="6xl"
                 fontWeight="extrabold"
@@ -99,7 +99,7 @@ export default function Home() {
                   <Button>About</Button>
                 </NextLink>
                 <NextLink href="contact">
-                  <Button variant="outline" colorScheme="gradient">
+                  <Button variant="outline" colorScheme="pallete">
                     Contact
                   </Button>
                 </NextLink>
