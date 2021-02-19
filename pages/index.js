@@ -4,11 +4,11 @@ import NextLink from "next/link";
 import {
   Box,
   Button,
+  ButtonGroup,
   Center,
   Flex,
   Heading,
   IconButton,
-  LinkOverlay,
   Menu,
   MenuButton,
   MenuItem,
@@ -25,6 +25,7 @@ import {
   MoonIcon,
   SunIcon,
 } from "@chakra-ui/icons";
+import { GitHub, Instagram } from "react-feather";
 import Opacity from "components/opacity";
 
 export default function Home() {
@@ -88,7 +89,7 @@ export default function Home() {
               </Heading>
             </Center>
             <Center>
-              <Stack spacing={4} direction="row">
+              <ButtonGroup spacing={4}>
                 <NextLink href="services">
                   <Button>Services</Button>
                 </NextLink>
@@ -98,7 +99,23 @@ export default function Home() {
                 <NextLink href="about">
                   <Button>About</Button>
                 </NextLink>
-              </Stack>
+              </ButtonGroup>
+            </Center>
+            <Center>
+              <ButtonGroup spacing={4} size="lg">
+                <IconButton
+                  as="a"
+                  href="https://www.instagram.com/juliowernermm/"
+                  target="_blank"
+                  icon={<Instagram size={32} />}
+                />
+                <IconButton
+                  as="a"
+                  href="https://github.com/juliowernermm"
+                  target="_blank"
+                  icon={<GitHub size={32} />}
+                />
+              </ButtonGroup>
             </Center>
           </Stack>
         </Animation>

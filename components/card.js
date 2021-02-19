@@ -20,7 +20,7 @@ export default function Card(props) {
         boxShadow={"xl"}
         spacing={6}
         p={4}
-        sx={{ transition: "all 0.25s ease" }}
+        transition="all 0.25s ease"
         _hover={{
           transform: "translateY(-15px)",
           boxShadow: "2xl",

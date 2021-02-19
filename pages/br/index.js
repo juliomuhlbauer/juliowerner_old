@@ -4,11 +4,11 @@ import NextLink from "next/link";
 import {
   Box,
   Button,
+  ButtonGroup,
   Center,
   Flex,
   Heading,
   IconButton,
-  LinkOverlay,
   Menu,
   MenuButton,
   MenuItem,
@@ -25,6 +25,8 @@ import {
   MoonIcon,
   SunIcon,
 } from "@chakra-ui/icons";
+import { GitHub, Instagram } from "react-feather";
+import Opacity from "components/opacity";
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -35,7 +37,7 @@ export default function Home() {
         <title>Júlio Werner</title>
         <link rel="icon" href="/Logo.svg" />
       </Head>
-      <Animation>
+      <Opacity>
         <Box as="header" pos="fixed" w="100vw">
           <Flex my={8} mx={12}>
             <IconButton
@@ -69,7 +71,8 @@ export default function Home() {
             </Menu>
           </Flex>
         </Box>
-      </Animation>
+      </Opacity>
+
       <Center h="100vh">
         <Animation>
           <Stack spacing={4}>
@@ -86,7 +89,7 @@ export default function Home() {
               </Heading>
             </Center>
             <Center>
-              <Stack spacing={4} direction="row">
+              <ButtonGroup spacing={4}>
                 <NextLink href="br/servicos">
                   <Button>Serviços</Button>
                 </NextLink>
@@ -96,15 +99,23 @@ export default function Home() {
                 <NextLink href="br/sobre">
                   <Button>Sobre</Button>
                 </NextLink>
-              </Stack>
+              </ButtonGroup>
             </Center>
             <Center>
-              <Stack spacing={4} direction="row">
-                <Button
+              <ButtonGroup spacing={4} size="lg">
+                <IconButton
                   as="a"
                   href="https://www.instagram.com/juliowernermm/"
-                ></Button>
-              </Stack>
+                  target="_blank"
+                  icon={<Instagram size={32} />}
+                />
+                <IconButton
+                  as="a"
+                  href="https://github.com/juliowernermm"
+                  target="_blank"
+                  icon={<GitHub size={32} />}
+                />
+              </ButtonGroup>
             </Center>
           </Stack>
         </Animation>
