@@ -1,4 +1,4 @@
-import { Center, Link, SimpleGrid, Wrap } from "@chakra-ui/react";
+import { Center, Link, SimpleGrid } from "@chakra-ui/react";
 import Card from "components/card";
 import Page from "components/page";
 
@@ -22,7 +22,10 @@ export default function Projetos() {
             />
           </Link>
           <Link isExternal href="https://cryptogains.glideapp.io/">
-            <Card title="Crypto Gains App" image="/projects/Crypto Gains.png" />
+            <Card
+              title="App - Crypto Gains"
+              image="/projects/Crypto Gains.png"
+            />
           </Link>
 
           <Card title="Erich" image="/projects/Logos/Erich.png" scale="1.4" />

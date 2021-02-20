@@ -22,7 +22,10 @@ export default function Projects() {
             />
           </Link>
           <Link isExternal href="https://cryptogains.glideapp.io/">
-            <Card title="Crypto Gains App" image="/projects/Crypto Gains.png" />
+            <Card
+              title="App - Crypto Gains"
+              image="/projects/Crypto Gains.png"
+            />
           </Link>
 
           <Card title="Erich" image="/projects/Logos/Erich.png" scale="1.4" />
