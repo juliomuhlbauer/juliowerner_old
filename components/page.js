@@ -13,7 +13,7 @@ export default function Page(props) {
       <Center>
         <Box
           mb={{ base: 32, md: 0 }}
-          w={{ base: "90vw", lg: "70vw", xl: "60vw" }}
+          w={{ base: "90vw", lg: "85vw", xl: "60vw" }}
           maxW="100%"
         >
           <Nav>{props.title} </Nav>

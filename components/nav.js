@@ -23,14 +23,6 @@ export default function Nav({ children }) {
           alignItems="center"
           justify="space-around"
         >
-          <NextLink href="javascript:history.back()">
-            <IconButton
-              display={{ base: "none", md: "block" }}
-              variant="outline"
-              colorScheme="pallete"
-              icon={<ArrowBackIcon />}
-            />
-          </NextLink>
           <Spacer />
           <Heading
             as="h1"
@@ -46,6 +38,20 @@ export default function Nav({ children }) {
       </Animation>
       <Portal>
         <Opacity>
+          <Box
+            display={{ base: "none", md: "block" }}
+            pos="fixed"
+            top={6}
+            ml={12}
+          >
+            <NextLink href="javascript:history.back()">
+              <IconButton
+                variant="outline"
+                colorScheme="pallete"
+                icon={<ArrowBackIcon />}
+              />
+            </NextLink>
+          </Box>
           <Box
             display={{ base: "block", md: "none" }}
             pos="fixed"
