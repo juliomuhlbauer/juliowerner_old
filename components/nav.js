@@ -1,15 +1,11 @@
 import NextLink from "next/link";
 
 import {
-  Button,
-  Link,
-  Stack,
   IconButton,
   Heading,
   Flex,
   Spacer,
   Box,
-  Center,
   Portal,
 } from "@chakra-ui/react";
 import { ArrowBackIcon } from "@chakra-ui/icons";
@@ -20,7 +16,13 @@ export default function Nav({ children }) {
   return (
     <>
       <Animation>
-        <Flex as="header" m={4} alignItems="center" justify="space-around">
+        <Flex
+          as="header"
+          m={4}
+          mb={12}
+          alignItems="center"
+          justify="space-around"
+        >
           <NextLink href="javascript:history.back()">
             <IconButton
               display={{ base: "none", md: "block" }}
@@ -47,8 +49,8 @@ export default function Nav({ children }) {
           <Box
             display={{ base: "block", md: "none" }}
             pos="fixed"
-            bottom="10vh"
-            ml={16}
+            bottom={8}
+            ml={12}
           >
             <NextLink href="javascript:history.back()">
               <Box>

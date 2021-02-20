@@ -10,10 +10,14 @@ export default function Page(props) {
         <title>{props.title} | Júlio Werner</title>
         <link rel="icon" href="/Logo.svg" />
       </Head>
+      <Center>
+        <Box
+          mb={{ base: 32, md: 0 }}
+          w={{ base: "90vw", lg: "70vw", xl: "60vw" }}
+          maxW="100%"
+        >
+          <Nav>{props.title} </Nav>
 
-      <Nav>{props.title} </Nav>
-      <Center as="main">
-        <Box w="90vw" maxW="100%">
           <Animation>{props.children}</Animation>
         </Box>
       </Center>

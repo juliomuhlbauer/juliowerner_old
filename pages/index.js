@@ -25,8 +25,8 @@ import {
   MoonIcon,
   SunIcon,
 } from "@chakra-ui/icons";
-import { GitHub, Instagram } from "react-feather";
 import Opacity from "components/opacity";
+import { FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -107,13 +107,13 @@ export default function Home() {
                   as="a"
                   href="https://www.instagram.com/juliowernermm/"
                   target="_blank"
-                  icon={<Instagram size={32} />}
+                  icon={<FaInstagram size={32} />}
                 />
                 <IconButton
                   as="a"
                   href="https://github.com/juliowernermm"
                   target="_blank"
-                  icon={<GitHub size={32} />}
+                  icon={<FaGithub size={32} />}
                 />
               </ButtonGroup>
             </Center>

@@ -15,7 +15,7 @@ export default function Card(props) {
         alignItems="center"
         w="320px"
         h="320px"
-        // bg={useColorModeValue("white", "gray.900")}
+        bg={useColorModeValue("white", "gray.700")}
         rounded={"md"}
         boxShadow={"xl"}
         spacing={6}
