@@ -10,7 +10,6 @@ import {
 export default function Knowlodge(props) {
   return (
     <Box
-      cursor="pointer"
       bg={useColorModeValue("white", "gray.700")}
       rounded={"md"}
       boxShadow={"xl"}
