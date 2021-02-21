@@ -27,18 +27,6 @@ export default function Projetos() {
               image="/projects/Crypto Gains.png"
             />
           </Link>
-
-          <Card title="Erich" image="/projects/Logos/Erich.png" scale="1.4" />
-          <Card
-            title="Allan Queiroz"
-            image="/projects/Logos/Allan Queiroz.png"
-            scale="1.6"
-          />
-          <Card
-            title="Karen Rocha"
-            image="/projects/Logos/Karen Rocha.png"
-            scale="1.6"
-          />
         </SimpleGrid>
       </Center>
     </Page>
