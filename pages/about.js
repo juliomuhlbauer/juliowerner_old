@@ -1,3 +1,4 @@
+import { CheckIcon } from "@chakra-ui/icons";
 import {
   Divider,
   Heading,
@@ -21,7 +22,7 @@ export default function About() {
         <Text fontSize="2xl" fontWeight="700">
           Hey, my name is Júlio Werner. I´m 17 years old and I live in São
           Paulo, Brazil.
-          <br /> <br /> I'm a designer, a programmer and sometimes entrepreneur.
+          <br /> <br /> I'm a designer, programmer and sometimes entrepreneur.
         </Text>
 
         <Image
@@ -53,7 +54,13 @@ export default function About() {
           radius="md"
           value="100"
         />
-        <Knowlodge image="/knowlodge/languages/US.png" radius="md" value="75" />
+        <Knowlodge
+          image="/knowlodge/languages/US.png"
+          radius="md"
+          value="75"
+          text="Cambridge"
+          icon={<CheckIcon />}
+        />
         <Knowlodge
           image="/knowlodge/languages/Spain.png"
           radius="md"

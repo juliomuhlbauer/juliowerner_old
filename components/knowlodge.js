@@ -5,6 +5,9 @@ import {
   Box,
   useColorModeValue,
   IconButton,
+  Stack,
+  Text,
+  Flex,
 } from "@chakra-ui/react";
 
 export default function Knowlodge(props) {
@@ -28,13 +31,18 @@ export default function Knowlodge(props) {
           maxW="100px"
           maxH="64px"
         />
-
-        <Progress
-          colorScheme="pallete"
-          rounded={8}
-          w="100%"
-          value={props.value}
-        />
+        <Stack>
+          <Progress
+            colorScheme="pallete"
+            rounded={8}
+            w="100%"
+            value={props.value}
+          />
+          <Stack direction="row" spacing={2} align="center">
+            {props.icon}
+            <Text>{props.text}</Text>
+          </Stack>
+        </Stack>
       </SimpleGrid>
     </Box>
   );

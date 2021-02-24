@@ -52,7 +52,13 @@ export default function Sobre() {
           radius="md"
           value="100"
         />
-        <Knowlodge image="/knowlodge/languages/US.png" radius="md" value="75" />
+        <Knowlodge
+          image="/knowlodge/languages/US.png"
+          radius="md"
+          value="75"
+          text="Cambridge"
+          icon={<CheckIcon />}
+        />
         <Knowlodge
           image="/knowlodge/languages/Spain.png"
           radius="md"
