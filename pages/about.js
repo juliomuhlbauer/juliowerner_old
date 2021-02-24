@@ -58,7 +58,7 @@ export default function About() {
           image="/knowlodge/languages/US.png"
           radius="md"
           value="75"
-          text="Cambridge"
+          text="Cambridge B2"
           icon={<CheckIcon />}
         />
         <Knowlodge
