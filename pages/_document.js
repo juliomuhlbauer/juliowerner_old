@@ -1,4 +1,4 @@
-import { Box, ColorModeScript } from "@chakra-ui/react";
+import { useColorModeValue, ColorModeScript } from "@chakra-ui/react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import customTheme from "styles/theme";
 
@@ -15,7 +15,6 @@ class MyDocument extends Document {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/Logo.svg" />
         <Head />
         <body>
           <ColorModeScript

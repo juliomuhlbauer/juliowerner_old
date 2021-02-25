@@ -1,14 +1,28 @@
 import Head from "next/head";
 import Nav from "components/nav";
 import Animation from "components/animation";
-import { Box, Center } from "@chakra-ui/react";
+import { Box, Center, useColorModeValue } from "@chakra-ui/react";
 
 export default function Page(props) {
   return (
     <>
       <Head>
         <title>{props.title} | Júlio Werner</title>
-        <link rel="icon" href="/Logo.svg" />
+        <link
+          rel="icon"
+          href="/Logo Black.svg"
+          media="(prefers-color-scheme:no-preference)"
+        />
+        <link
+          rel="icon"
+          href="/Logo Black.svg"
+          media="(refers-color-scheme:light)"
+        />
+        <link
+          rel="icon"
+          href="/Logo White.svg"
+          media="(prefers-color-scheme:dark)"
+        />
       </Head>
       <Center>
         <Box

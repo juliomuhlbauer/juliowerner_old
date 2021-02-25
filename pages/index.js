@@ -16,6 +16,7 @@ import {
   Spacer,
   Stack,
   useColorMode,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import Animation from "components/animation";
 import ReactCountryFlag from "react-country-flag";
@@ -35,7 +36,21 @@ export default function Home() {
     <>
       <Head>
         <title>Júlio Werner</title>
-        <link rel="icon" href="/Logo.svg" />
+        <link
+          rel="icon"
+          href="/Logo Black.svg"
+          media="(prefers-color-scheme:no-preference)"
+        />
+        <link
+          rel="icon"
+          href="/Logo Black.svg"
+          media="(refers-color-scheme:light)"
+        />
+        <link
+          rel="icon"
+          href="/Logo White.svg"
+          media="(prefers-color-scheme:dark)"
+        />
       </Head>
       <Opacity>
         <Box as="header" pos="fixed" w="100vw">
