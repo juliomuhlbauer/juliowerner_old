@@ -18,7 +18,7 @@ export default function Nav({ children }) {
       <Animation>
         <Flex
           as="header"
-          m={4}
+          m={6}
           mb={12}
           alignItems="center"
           justify="space-around"
@@ -41,7 +41,7 @@ export default function Nav({ children }) {
           <Box
             display={{ base: "none", md: "block" }}
             pos="fixed"
-            top={6}
+            top={8}
             ml={12}
           >
             <NextLink href="javascript:history.back()">
