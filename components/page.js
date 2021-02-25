@@ -8,21 +8,7 @@ export default function Page(props) {
     <>
       <Head>
         <title>{props.title} | Júlio Werner</title>
-        <link
-          rel="icon"
-          href="/Logo Black.svg"
-          media="(prefers-color-scheme:no-preference)"
-        />
-        <link
-          rel="icon"
-          href="/Logo Black.svg"
-          media="(refers-color-scheme:light)"
-        />
-        <link
-          rel="icon"
-          href="/Logo White.svg"
-          media="(prefers-color-scheme:dark)"
-        />
+        <link rel="icon" href="/Logo.svg" />
       </Head>
       <Center>
         <Box

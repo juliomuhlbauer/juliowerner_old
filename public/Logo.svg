@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{font-family:'OvergrowDemo';}
+	.st1{font-size:704.9692px;}
+	.st2{fill:url(#SVGID_1_);}
+	.st3{fill:url(#SVGID_2_);}
+	.st4{fill:#FF554B;}
+	.st5{fill:#F9C529;}
+</style>
+<g>
+	<text transform="matrix(1 0 0 1 -4.272461e-04 749.7235)" class="st0 st1">JW</text>
+	<g>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="33.8379" y1="502.6311" x2="1056.041" y2="502.6311">
+			<stop  offset="0" style="stop-color:#FF554B"/>
+			<stop  offset="1" style="stop-color:#F9C529"/>
+		</linearGradient>
+		<path class="st2" d="M219.2,255.5v343.3c0,83.2-67.7,150.9-150.9,150.9H33.8V626.4h34.5c14.8,0,26.8-12,26.8-26.8V256.2
+			L219.2,255.5z"/>
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="33.8379" y1="502.6311" x2="1056.041" y2="502.6311">
+			<stop  offset="0" style="stop-color:#FF554B"/>
+			<stop  offset="1" style="stop-color:#F9C529"/>
+		</linearGradient>
+		<path class="st3" d="M1056,256.2l-208,493.5H714.1l-43-101.5l-43,101.5H494.2l-208-493.5h133.9l141,334.9l43-101.5l-98-233.3
+			h133.9l141,334.9l141-334.9H1056z"/>
+	</g>
+</g>
+<rect x="-518.4" y="74.1" class="st4" width="346.5" height="346.5"/>
+<rect x="-509.4" y="602.1" class="st5" width="429" height="429"/>
+</svg>
