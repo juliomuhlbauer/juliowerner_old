@@ -22,7 +22,8 @@ export default function Sobre() {
         <Text fontSize="2xl" fontWeight="700">
           Olá, me chamo Júlio Werner. Tenho 17 anos e moro em São Paulo.
           <br /> <br /> Sou designer, programador e, de vez em quando,
-          empreendedor.
+          empreendedor. <br /> <br /> Atualmente estou estudando Administração
+          no IMT - Instituto Mauá de Tecnologia.
         </Text>
 
         <Image
@@ -57,7 +58,7 @@ export default function Sobre() {
           image="/knowlodge/languages/US.png"
           radius="md"
           value="75"
-          text="Cambridge B2"
+          text="Cambridge B2 2019"
           icon={<CheckIcon />}
         />
         <Knowlodge

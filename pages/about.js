@@ -23,6 +23,8 @@ export default function About() {
           Hey, my name is Júlio Werner. I´m 17 years old and I live in São
           Paulo, Brazil.
           <br /> <br /> I'm a designer, programmer and sometimes entrepreneur.
+          <br /> <br /> I am currently studying Administration at Mauá Institute
+          of Technology.
         </Text>
 
         <Image
@@ -58,7 +60,7 @@ export default function About() {
           image="/knowlodge/languages/US.png"
           radius="md"
           value="75"
-          text="Cambridge B2"
+          text="Cambridge B2 2019"
           icon={<CheckIcon />}
         />
         <Knowlodge
