@@ -11,6 +11,25 @@ import {
 import Knowlodge from "components/knowlodge";
 import Page from "components/page";
 
+function Title(props) {
+  return (
+    <>
+      <Heading as="h3" my={4} fontSize="3xl" fontWeight="500">
+        {props.title}
+      </Heading>
+      <Divider />
+    </>
+  );
+}
+
+function KnowlodgeSection(props) {
+  return (
+    <SimpleGrid my={8} templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={8}>
+      {props.children}
+    </SimpleGrid>
+  );
+}
+
 export default function Sobre() {
   return (
     <Page title="Sobre">
@@ -23,7 +42,7 @@ export default function Sobre() {
           Olá, me chamo Júlio Werner. Tenho 17 anos e moro em São Paulo.
           <br /> <br /> Sou designer, programador e, de vez em quando,
           empreendedor. <br /> <br /> Atualmente estou estudando Administração
-          no IMT - Instituto Mauá de Tecnologia.
+          de Empresas no IMT - Instituto Mauá de Tecnologia.
         </Text>
 
         <Image
@@ -40,15 +59,8 @@ export default function Sobre() {
       >
         Aqui estão alguns dos meus conhecimentos:
       </Text>
-      <Heading as="h3" my={4} fontSize="3xl" fontWeight="500">
-        Línguas
-      </Heading>
-      <Divider />
-      <SimpleGrid
-        my={8}
-        templateColumns={{ base: "1fr", md: "1fr 1fr" }}
-        gap={8}
-      >
+      <Title title="Línguas" />
+      <KnowlodgeSection>
         <Knowlodge
           image="/knowlodge/languages/Brazil.png"
           radius="md"
@@ -66,16 +78,9 @@ export default function Sobre() {
           radius="md"
           value="30"
         />
-      </SimpleGrid>
-      <Heading as="h3" my={4} fontSize="3xl" fontWeight="500">
-        Design
-      </Heading>
-      <Divider />
-      <SimpleGrid
-        my={8}
-        templateColumns={{ base: "1fr", md: "1fr 1fr" }}
-        gap={8}
-      >
+      </KnowlodgeSection>
+      <Title title="Design" />
+      <KnowlodgeSection>
         <Knowlodge image="/knowlodge/design/Figma.png" value="100" />
         <Knowlodge image="/knowlodge/design/After Effects.png" value="75" />
         <Knowlodge image="/knowlodge/design/Dimension.png" value="50" />
@@ -86,16 +91,9 @@ export default function Sobre() {
         <Knowlodge image="/knowlodge/design/Premiere Pro.png" value="80" />
         <Knowlodge image="/knowlodge/design/XD.png" value="100" />
         <Knowlodge image="/knowlodge/design/Cinema 4D.png" value="50" />
-      </SimpleGrid>
-      <Heading as="h3" my={4} fontSize="3xl" fontWeight="500">
-        Programação
-      </Heading>
-      <Divider />
-      <SimpleGrid
-        my={8}
-        templateColumns={{ base: "1fr", md: "1fr 1fr" }}
-        gap={8}
-      >
+      </KnowlodgeSection>
+      <Title title="Programação" />
+      <KnowlodgeSection>
         <Knowlodge image="/knowlodge/code/HTML.png" value="100" />
         <Knowlodge image="/knowlodge/code/CSS.png" value="75" />
         <Knowlodge image="/knowlodge/code/JavaScript.png" value="25" />
@@ -109,7 +107,7 @@ export default function Sobre() {
         />
         <Knowlodge image="/knowlodge/code/Flutter.png" value="25" />
         <Knowlodge image="/knowlodge/code/Firebase.png" value="25" />
-      </SimpleGrid>
+      </KnowlodgeSection>
     </Page>
   );
 }

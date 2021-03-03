@@ -12,7 +12,7 @@ export default function Projects() {
           justify="center"
           spacing={12}
         >
-          <Link isExternal href="https://arededofuturo.com.br/home-page/">
+          <Link isExternal href="https://arededofuturo.com.br/">
             <Card title="A Rede do Futuro" image="/projects/RDF.png" />
           </Link>
           <Link isExternal href="https://arededofuturo.glideapp.io/">

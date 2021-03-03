@@ -1,8 +1,10 @@
 import { CheckIcon } from "@chakra-ui/icons";
 import {
+  Box,
   Divider,
   Heading,
   Image,
+  Portal,
   SimpleGrid,
   Stack,
   Text,
@@ -10,6 +12,25 @@ import {
 } from "@chakra-ui/react";
 import Knowlodge from "components/knowlodge";
 import Page from "components/page";
+
+function Title(props) {
+  return (
+    <>
+      <Heading as="h3" my={4} fontSize="3xl" fontWeight="500">
+        {props.title}
+      </Heading>
+      <Divider />
+    </>
+  );
+}
+
+function KnowlodgeSection(props) {
+  return (
+    <SimpleGrid my={8} templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={8}>
+      {props.children}
+    </SimpleGrid>
+  );
+}
 
 export default function About() {
   return (
@@ -23,8 +44,8 @@ export default function About() {
           Hey, my name is Júlio Werner. I´m 17 years old and I live in São
           Paulo, Brazil.
           <br /> <br /> I'm a designer, programmer and sometimes entrepreneur.
-          <br /> <br /> I am currently studying Administration at Mauá Institute
-          of Technology.
+          <br /> <br /> I am currently studying Business Administration at IMT -
+          Mauá Institute of Technology.
         </Text>
 
         <Image
@@ -42,15 +63,9 @@ export default function About() {
       >
         Here are some of my knowlodge:
       </Heading>
-      <Heading as="h3" my={4} fontSize="3xl" fontWeight="500">
-        Languages
-      </Heading>
-      <Divider />
-      <SimpleGrid
-        my={8}
-        templateColumns={{ base: "1fr", md: "1fr 1fr" }}
-        gap={8}
-      >
+
+      <Title title="Languages" />
+      <KnowlodgeSection>
         <Knowlodge
           image="/knowlodge/languages/Brazil.png"
           radius="md"
@@ -68,16 +83,10 @@ export default function About() {
           radius="md"
           value="30"
         />
-      </SimpleGrid>
-      <Heading as="h3" my={4} fontSize="3xl" fontWeight="500">
-        Design
-      </Heading>
-      <Divider />
-      <SimpleGrid
-        my={8}
-        templateColumns={{ base: "1fr", md: "1fr 1fr" }}
-        gap={8}
-      >
+      </KnowlodgeSection>
+
+      <Title title="Design" />
+      <KnowlodgeSection>
         <Knowlodge image="/knowlodge/design/Figma.png" value="100" />
         <Knowlodge image="/knowlodge/design/After Effects.png" value="75" />
         <Knowlodge image="/knowlodge/design/Dimension.png" value="50" />
@@ -88,16 +97,10 @@ export default function About() {
         <Knowlodge image="/knowlodge/design/Premiere Pro.png" value="80" />
         <Knowlodge image="/knowlodge/design/XD.png" value="100" />
         <Knowlodge image="/knowlodge/design/Cinema 4D.png" value="50" />
-      </SimpleGrid>
-      <Heading as="h3" my={4} fontSize="3xl" fontWeight="500">
-        Programming
-      </Heading>
-      <Divider />
-      <SimpleGrid
-        my={8}
-        templateColumns={{ base: "1fr", md: "1fr 1fr" }}
-        gap={8}
-      >
+      </KnowlodgeSection>
+
+      <Title title="Programming" />
+      <KnowlodgeSection>
         <Knowlodge image="/knowlodge/code/HTML.png" value="100" />
         <Knowlodge image="/knowlodge/code/CSS.png" value="75" />
         <Knowlodge image="/knowlodge/code/JavaScript.png" value="25" />
@@ -111,7 +114,7 @@ export default function About() {
         />
         <Knowlodge image="/knowlodge/code/Flutter.png" value="25" />
         <Knowlodge image="/knowlodge/code/Firebase.png" value="25" />
-      </SimpleGrid>
+      </KnowlodgeSection>
     </Page>
   );
 }
