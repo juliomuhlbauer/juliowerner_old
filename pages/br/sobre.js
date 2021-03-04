@@ -46,8 +46,8 @@ export default function Sobre() {
         </Text>
 
         <Image
-          maxW={{ base: "350px", md: "400px" }}
           borderRadius="lg"
+          boxSize={{ base: "350px", md: "400px" }}
           src="/Picture.png"
         />
       </Stack>

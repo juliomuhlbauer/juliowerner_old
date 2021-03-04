@@ -23,12 +23,12 @@ export default function Knowlodge(props) {
         boxShadow: "2xl",
       }}
     >
-      <SimpleGrid templateColumns="1fr 2fr" alignItems="center">
+      <SimpleGrid h="64px" templateColumns="1fr 2fr" alignItems="center">
         <Image
           borderRadius={props.radius}
           justifySelf="left"
           src={props.image}
-          h="64px"
+          maxH="64px"
           maxW="100px"
         />
         <Stack>
