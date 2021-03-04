@@ -28,8 +28,8 @@ export default function Knowlodge(props) {
           borderRadius={props.radius}
           justifySelf="left"
           src={props.image}
+          h="64px"
           maxW="100px"
-          maxH="64px"
         />
         <Stack>
           <Progress
