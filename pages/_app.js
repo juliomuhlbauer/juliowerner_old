@@ -1,12 +1,15 @@
-import "styles/styles.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import customTheme from "styles/theme";
 import "swiper/swiper-bundle.css";
+import Styles from "styles/styles";
 function MyApp({ Component, pageProps, router }) {
   return (
-    <ChakraProvider resetCSS theme={customTheme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <>
+      <Styles />
+      <ChakraProvider resetCSS theme={customTheme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </>
   );
 }
 
