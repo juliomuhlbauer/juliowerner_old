@@ -25,15 +25,15 @@ export default function Knowlodge(props) {
       }}
     >
       <SimpleGrid templateColumns="1fr 2fr" alignItems="center">
-        <Box h="64px">
-          <Image
+        <Box>      <Image
+           
             borderRadius={props.radius}
             justifySelf="left"
             src={props.image}
-            maxH="64px"
+            h="64px"
             maxW="100px"
           />
-        </Box>
+    
         <Stack>
           <Progress
             colorScheme="pallete"
