@@ -13,6 +13,7 @@ import {
 export default function Knowlodge(props) {
   return (
     <Box
+      alignItems="center"
       bg={useColorModeValue("white", "gray.700")}
       rounded={"md"}
       boxShadow={"xl"}
@@ -23,14 +24,16 @@ export default function Knowlodge(props) {
         boxShadow: "2xl",
       }}
     >
-      <SimpleGrid h="64px" templateColumns="1fr 2fr" alignItems="center">
-        <Image
-          borderRadius={props.radius}
-          justifySelf="left"
-          src={props.image}
-          maxH="64px"
-          maxW="100px"
-        />
+      <SimpleGrid templateColumns="1fr 2fr" alignItems="center">
+        <Box h="64px">
+          <Image
+            borderRadius={props.radius}
+            justifySelf="left"
+            src={props.image}
+            maxH="64px"
+            maxW="100px"
+          />
+        </Box>
         <Stack>
           <Progress
             colorScheme="pallete"
