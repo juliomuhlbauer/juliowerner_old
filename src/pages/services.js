@@ -3,16 +3,6 @@ import Card from "@/components/card";
 import Page from "@/components/page";
 import { ServicesData } from "@/data/services";
 
-const fetch = require("isomorphic-fetch");
-fetch("https://api.sheetson.com/v2/sheets/Services", {
-  headers: {
-    Authorization:
-      "WM5dmIz9UizqUAq20TkF7PWdFqDVNHTUxRgrAG-653sBGWNzpvP3baW3d-s",
-    "X-Spreadsheet-Id": "1kTb7cNwbdQJBgSdjMxQVMk4JA4BMVwX7O64Vtl-IcNM",
-  },
-})
-  .then((r) => r.json())
-  .then((result) => console.log(result));
 export default function Services() {
   return (
     <Page title="Services">
