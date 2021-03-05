@@ -18,7 +18,7 @@ import {
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
-import Animation from "components/animation";
+import Animation from "@/components/animation";
 import ReactCountryFlag from "react-country-flag";
 import {
   CheckIcon,
@@ -26,7 +26,7 @@ import {
   MoonIcon,
   SunIcon,
 } from "@chakra-ui/icons";
-import Opacity from "components/opacity";
+import Opacity from "@/components/opacity";
 import { FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Home() {

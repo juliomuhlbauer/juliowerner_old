@@ -1,7 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import customTheme from "styles/theme";
+import customTheme from "@/styles/theme";
 import "swiper/swiper-bundle.css";
-import Styles from "styles/styles";
+import Styles from "@/styles/styles";
 function MyApp({ Component, pageProps, router }) {
   return (
     <>

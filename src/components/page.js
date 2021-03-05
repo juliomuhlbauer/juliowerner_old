@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Nav from "components/nav";
-import Animation from "components/animation";
-import { Box, Center, useColorModeValue } from "@chakra-ui/react";
+import Nav from "@/components/nav";
+import Animation from "@/components/animation";
+import { Box, Center } from "@chakra-ui/react";
 
 export default function Page(props) {
   return (
@@ -16,7 +16,7 @@ export default function Page(props) {
           w={{ base: "90vw", lg: "85vw", xl: "60vw" }}
           maxW="100%"
         >
-          <Nav>{props.title} </Nav>
+          <Nav backLink={props.backLink}>{props.title} </Nav>
 
           <Animation>{props.children}</Animation>
         </Box>

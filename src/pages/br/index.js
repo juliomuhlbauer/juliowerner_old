@@ -18,7 +18,7 @@ import {
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
-import Animation from "components/animation";
+import Animation from "@/components/animation";
 import ReactCountryFlag from "react-country-flag";
 import {
   CheckIcon,
@@ -26,8 +26,7 @@ import {
   MoonIcon,
   SunIcon,
 } from "@chakra-ui/icons";
-import { GitHub, Instagram } from "react-feather";
-import Opacity from "components/opacity";
+import Opacity from "@/components/opacity";
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();

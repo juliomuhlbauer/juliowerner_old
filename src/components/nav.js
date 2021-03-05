@@ -9,10 +9,10 @@ import {
   Portal,
 } from "@chakra-ui/react";
 import { ArrowBackIcon } from "@chakra-ui/icons";
-import Animation from "components/animation";
-import Opacity from "components/opacity";
+import Animation from "@/components/animation";
+import Opacity from "@/components/opacity";
 
-export default function Nav({ children }) {
+export default function Nav(props) {
   return (
     <>
       <Animation>
@@ -31,7 +31,7 @@ export default function Nav({ children }) {
             fontSize="5xl"
             fontWeight="bold"
           >
-            {children}
+            {props.children}
           </Heading>
           <Spacer />
         </Flex>
@@ -44,7 +44,7 @@ export default function Nav({ children }) {
             top={8}
             ml={12}
           >
-            <NextLink href="javascript:history.back()">
+            <NextLink href={props.backLink}>
               <IconButton
                 variant="outline"
                 colorScheme="pallete"
@@ -58,7 +58,7 @@ export default function Nav({ children }) {
             bottom={8}
             ml={12}
           >
-            <NextLink href="javascript:history.back()">
+            <NextLink href={props.backLink}>
               <Box>
                 <IconButton
                   size="lg"
