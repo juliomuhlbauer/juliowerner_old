@@ -44,7 +44,7 @@ export default function Nav(props) {
             top={8}
             ml={12}
           >
-            <NextLink href={props.backLink}>
+            <NextLink href="./">
               <IconButton
                 variant="outline"
                 colorScheme="pallete"
@@ -58,7 +58,7 @@ export default function Nav(props) {
             bottom={8}
             ml={12}
           >
-            <NextLink href={props.backLink}>
+            <NextLink href="./">
               <Box>
                 <IconButton
                   size="lg"

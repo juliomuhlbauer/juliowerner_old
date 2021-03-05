@@ -30,7 +30,7 @@ const MauaJrData = [
 export default function MauaJr() {
   SwiperCore.use([Pagination, Navigation]);
   return (
-    <Page backLink="/br" title="Mauá Jr">
+    <Page title="Mauá Jr">
       <Center>
         <Box
           w={{ base: "360px", md: "540px" }}

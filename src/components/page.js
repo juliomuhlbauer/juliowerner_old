@@ -16,7 +16,7 @@ export default function Page(props) {
           w={{ base: "90vw", lg: "85vw", xl: "60vw" }}
           maxW="100%"
         >
-          <Nav backLink={props.backLink}>{props.title} </Nav>
+          <Nav>{props.title} </Nav>
 
           <Animation>{props.children}</Animation>
         </Box>

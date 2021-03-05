@@ -35,7 +35,7 @@ function KnowlodgeSection(props) {
 
 export default function About() {
   return (
-    <Page backLink="/" title="About">
+    <Page title="About">
       <Stack
         spacing={8}
         align="center"

@@ -15,7 +15,7 @@ fetch("https://api.sheetson.com/v2/sheets/Services", {
   .then((result) => console.log(result));
 export default function Services() {
   return (
-    <Page backLink="/" title="Services">
+    <Page title="Services">
       <Center as="section" h={{ base: "100%", xl: "75vh" }}>
         <SimpleGrid
           templateColumns={{ base: "1fr", md: "1fr 1fr", xl: "1fr 1fr 1fr" }}

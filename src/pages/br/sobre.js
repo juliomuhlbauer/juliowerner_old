@@ -33,7 +33,7 @@ function KnowlodgeSection(props) {
 
 export default function Sobre() {
   return (
-    <Page backLink="/br" title="Sobre">
+    <Page title="Sobre">
       <Stack
         spacing={8}
         align="center"

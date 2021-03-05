@@ -5,7 +5,7 @@ import { ProjectsData } from "@/data/projects";
 
 export default function Projects() {
   return (
-    <Page backLink="/" title="Projects">
+    <Page title="Projects">
       <Center as="section" h={{ base: "100%", xl: "75vh" }}>
         <SimpleGrid
           templateColumns={{ base: "1fr", md: "1fr 1fr", xl: "1fr 1fr 1fr" }}

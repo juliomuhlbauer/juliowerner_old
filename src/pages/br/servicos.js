@@ -4,7 +4,7 @@ import Page from "@/components/page";
 import { ServicesData } from "@/data/services";
 export default function Servicos() {
   return (
-    <Page backLink="/br" title="Serviços">
+    <Page title="Serviços">
       <Center as="section" h={{ base: "100%", xl: "75vh" }}>
         <SimpleGrid
           templateColumns={{ base: "1fr", md: "1fr 1fr", xl: "1fr 1fr 1fr" }}
