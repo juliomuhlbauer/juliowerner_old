@@ -26,7 +26,7 @@ export default function Nav(props) {
           <Spacer />
           <Heading
             as="h1"
-            bgGradient="linear(to-r, pallete.600,pallete.200)"
+            bgGradient="linear(to-r, pallete.600,pallete.100)"
             bgClip="text"
             fontSize="5xl"
             fontWeight="bold"

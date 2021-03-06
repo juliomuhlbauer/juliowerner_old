@@ -82,7 +82,7 @@ export default function Home() {
               <Heading
                 as="h1"
                 textAlign="center"
-                bgGradient="linear(to-r, pallete.600,pallete.200)"
+                bgGradient="linear(to-r, pallete.600,pallete.100)"
                 bgClip="text"
                 fontSize={{ base: "5xl", sm: "6xl" }}
                 fontWeight="extrabold"

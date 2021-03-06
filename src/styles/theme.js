@@ -1,8 +1,9 @@
-import { theme, extendTheme } from "@chakra-ui/react";
+import { theme, extendTheme, useColorModeValue } from "@chakra-ui/react";
 const config = {
   initialColorMode: "dark",
   useSystemColorMode: false,
 };
+
 const customTheme = extendTheme({
   ...theme,
   styles: {
@@ -10,6 +11,7 @@ const customTheme = extendTheme({
       "html": {
         "scrollBehavior": "smooth",
         "-webkit-tap-highlight-color": "transparent",
+        "focusBorderColor": "pink.400",
       },
       "::selection": {
         color: "white",
@@ -24,10 +26,13 @@ const customTheme = extendTheme({
         bgColor: "gray.600",
       },
       "::-webkit-scrollbar-thumb:hover": {
-        background: "pallete.500",
+        background: "pallete.200",
       },
       "::-webkit-scrollbar-corner": {
         bg: "transparent",
+      },
+      ":focus": {
+        "box-shadow": "0 0 0 3px #F56235 !important",
       },
     },
   },
@@ -39,15 +44,10 @@ const customTheme = extendTheme({
 
   colors: {
     pallete: {
-      100: "#f9c529",
-      200: "#f9c529", //Dark
-      300: "#f9c529",
-      400: "#f9c529",
-      500: "#ff554b",
-      600: "#ff554b", //Light
-      700: "#ff554b",
-      800: "#ff554b",
-      900: "#ff554b",
+      100: "#FFE345",
+      200: "#F45831", //Dark
+      500: "#F45831",
+      600: "#F23A1F", //Light
     },
   },
 });
