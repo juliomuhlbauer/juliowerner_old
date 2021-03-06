@@ -9,6 +9,13 @@ function MyApp({ Component, pageProps }) {
       <DefaultSeo
         title="Júlio Werner"
         description="Júlio Werner is a Designer and Developer focused on the digital market"
+        additionalMetaTags={[
+          {
+            name: "keywords",
+            content:
+              "Design, Desenvolvimento, Startup, Programção, Identidade Visual",
+          },
+        ]}
         openGraph={{
           url: "https://juliowerner.netlify.app/",
           title: "Júlio Werner",
