@@ -12,21 +12,22 @@ const customTheme = extendTheme({
         "-webkit-tap-highlight-color": "transparent",
       },
       "::selection": {
-        background: "pallete.500",
-      },
-      "::-webkit-scrollbar-thumb:hover": {
+        color: "white",
         background: "pallete.500",
       },
       "::-webkit-scrollbar": {
         width: "8px",
         height: "8px ",
       },
-      "::-webkit-scrollbar-corner": {
-        bg: "transparent",
-      },
       "::-webkit-scrollbar-thumb": {
         borderRadius: "5px",
         bgColor: "gray.600",
+      },
+      "::-webkit-scrollbar-thumb:hover": {
+        background: "pallete.500",
+      },
+      "::-webkit-scrollbar-corner": {
+        bg: "transparent",
       },
     },
   },
