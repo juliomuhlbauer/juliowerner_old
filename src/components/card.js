@@ -30,6 +30,7 @@ export default function Card(props) {
           src={props.image}
           transform={"scale(" + props.scale + ")"}
           maxH="200px"
+          alt={props.alt}
         />
       </Box>
       <Heading fontSize="2xl">{props.title}</Heading>

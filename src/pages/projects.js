@@ -15,7 +15,11 @@ export default function Projects() {
         >
           {ProjectsData.map((ProjectsData) => (
             <Link isExternal href={ProjectsData.link}>
-              <Card title={ProjectsData.title} image={ProjectsData.image} />
+              <Card
+                title={ProjectsData.title}
+                image={ProjectsData.image}
+                alt={ProjectsData.title}
+              />
             </Link>
           ))}
         </SimpleGrid>

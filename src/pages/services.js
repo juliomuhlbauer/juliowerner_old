@@ -14,7 +14,11 @@ export default function Services() {
           spacing={12}
         >
           {ServicesData.map((ServicesData) => (
-            <Card title={ServicesData.title} image={ServicesData.image} />
+            <Card
+              title={ServicesData.title}
+              image={ServicesData.image}
+              alt={ServicesData.title}
+            />
           ))}
         </SimpleGrid>
       </Center>
