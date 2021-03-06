@@ -14,13 +14,22 @@ function MyApp({ Component, pageProps }) {
           title: "Júlio Werner",
           description:
             "Júlio Werner is a Designer and Developer focused on the digital market",
-          images: {
-            url: "/Banner.png",
-            width: 1200,
-            height: 627,
-            alt:
-              "Júlio Werner is a Designer and Developer focused on the digital market",
-          },
+          images: [
+            {
+              url: "/Banner.png",
+              width: 1200,
+              height: 627,
+              alt:
+                "Júlio Werner is a Designer and Developer focused on the digital market",
+            },
+            {
+              url: "/Banner 2.png",
+              width: 1240,
+              height: 480,
+              alt:
+                "Júlio Werner is a Designer and Developer focused on the digital market",
+            },
+          ],
         }}
       />
       <ChakraProvider resetCSS theme={customTheme}>
