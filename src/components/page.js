@@ -8,7 +8,6 @@ export default function Page(props) {
     <>
       <Head>
         <title>{props.title} | Júlio Werner</title>
-        <link rel="icon" href="/Logo.svg" />
       </Head>
       <Center>
         <Box

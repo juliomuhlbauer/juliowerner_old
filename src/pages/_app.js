@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
           },
         ]}
         openGraph={{
-          url: "https://juliowerner.netlify.app/",
+          url: "https://juliowerner.netlify.app",
           title: "Júlio Werner",
           description:
             "Júlio Werner is a Designer and Developer focused on the digital market",

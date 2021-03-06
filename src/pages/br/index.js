@@ -35,7 +35,6 @@ export default function Home() {
     <>
       <Head>
         <title>Júlio Werner</title>
-        <link rel="icon" href="/Logo.svg" />
       </Head>
       <Opacity>
         <Box as="header" pos="fixed" w="100vw">
