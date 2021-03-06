@@ -1,52 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1200 627" style="enable-background:new 0 0 1200 627;" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1240 480" style="enable-background:new 0 0 1240 480;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#1A202C;}
-	.st1{font-family:'OvergrowDemo';}
-	.st2{font-size:340.735px;}
-	.st3{fill:url(#SVGID_1_);}
-	.st4{fill:url(#SVGID_2_);}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill:url(#SVGID_2_);}
+	.st3{font-family:'OvergrowDemo';}
+	.st4{font-size:261.0996px;}
 	.st5{fill:url(#SVGID_3_);}
 	.st6{fill:url(#SVGID_4_);}
 </style>
-<rect class="st0" width="1200" height="627"/>
-<g>
-	<text transform="matrix(1 0 0 1 339 414.8665)" class="st1 st2">JW</text>
+<g id="Layer_1">
+	<rect x="-1261" y="-73.5" class="st0" width="1200" height="627"/>
 	<g>
-		
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="355.3" y1="173.4" x2="849.3646" y2="173.4" gradientTransform="matrix(1 0 0 1 0 122)">
-			<stop  offset="0" style="stop-color:#FF554B"/>
-			<stop  offset="1" style="stop-color:#F9C529"/>
-		</linearGradient>
-		<path class="st3" d="M444.9,176v165.9c0,40.2-32.7,72.9-72.9,72.9h-16.7v-59.6H372c7.2,0,13-5.8,13-13v-166L444.9,176z"/>
-		
-			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="355.3552" y1="173.6" x2="849.4199" y2="173.6" gradientTransform="matrix(1 0 0 1 0 122)">
-			<stop  offset="0" style="stop-color:#FF554B"/>
-			<stop  offset="1" style="stop-color:#F9C529"/>
-		</linearGradient>
-		<path class="st4" d="M849.4,176.3L748.9,414.9h-64.7l-20.8-49.1l-20.8,49.1h-64.7L477.3,176.3H542l68.1,161.9l20.8-49.1
-			l-47.4-112.8h64.7l68.1,161.9l68.1-161.9L849.4,176.3L849.4,176.3z"/>
+		<text transform="matrix(1 0 0 1 -861.0003 317.6751)" class="st3" style="font-size:261.0998px;">JW</text>
+		<g>
+			
+				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-848.5107" y1="376.8716" x2="-469.9168" y2="376.8716" gradientTransform="matrix(1 0 0 -1 0 603)">
+				<stop  offset="0" style="stop-color:#FF554B"/>
+				<stop  offset="1" style="stop-color:#F9C529"/>
+			</linearGradient>
+			<path class="st1" d="M-779.9,134.6v127.1c0,30.8-25.1,55.9-55.9,55.9h-12.8V272h12.8c5.5,0,10-4.4,10-10V134.8L-779.9,134.6z"/>
+			
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-848.4684" y1="376.7183" x2="-469.8744" y2="376.7183" gradientTransform="matrix(1 0 0 -1 0 603)">
+				<stop  offset="0" style="stop-color:#FF554B"/>
+				<stop  offset="1" style="stop-color:#F9C529"/>
+			</linearGradient>
+			<path class="st2" d="M-469.9,134.9l-77,182.8h-49.6l-15.9-37.6l-15.9,37.6h-49.6L-755,134.9h49.6l52.2,124.1l15.9-37.6
+				l-36.3-86.4h49.6l52.2,124.1l52.2-124.1H-469.9L-469.9,134.9z"/>
+		</g>
 	</g>
 </g>
-<rect x="1261" y="73.5" class="st0" width="1240" height="480"/>
-<g>
-	<text transform="matrix(1 0 0 1 1620 414.8662)" class="st1 st2">JW</text>
+<g id="Layer_2">
+	<rect class="st0" width="1240" height="480"/>
 	<g>
-		
-			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="1636.3" y1="333.6005" x2="2130.3647" y2="333.6005" gradientTransform="matrix(1 0 0 -1 0 629)">
-			<stop  offset="0" style="stop-color:#FF554B"/>
-			<stop  offset="1" style="stop-color:#F9C529"/>
-		</linearGradient>
-		<path class="st5" d="M1725.9,176v165.9c0,40.2-32.7,72.9-72.9,72.9h-16.7v-59.6h16.7c7.2,0,13-5.8,13-13v-166L1725.9,176z"/>
-		
-			<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="1636.3552" y1="333.4005" x2="2130.4199" y2="333.4005" gradientTransform="matrix(1 0 0 -1 0 629)">
-			<stop  offset="0" style="stop-color:#FF554B"/>
-			<stop  offset="1" style="stop-color:#F9C529"/>
-		</linearGradient>
-		<path class="st6" d="M2130.4,176.3l-100.5,238.6h-64.7l-20.8-49.1l-20.8,49.1h-64.7l-100.6-238.6h64.7l68.1,161.9l20.8-49.1
-			l-47.4-112.8h64.7l68.1,161.9l68.1-161.9L2130.4,176.3L2130.4,176.3z"/>
+		<text transform="matrix(1 0 0 1 420.0003 317.6752)" class="st3 st4">JW</text>
+		<g>
+			
+				<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="432.4908" y1="103.1306" x2="811.0844" y2="103.1306" gradientTransform="matrix(1 0 0 1 0 123)">
+				<stop  offset="0" style="stop-color:#FF554B"/>
+				<stop  offset="1" style="stop-color:#F9C529"/>
+			</linearGradient>
+			<path class="st5" d="M501.1,134.6v127.1c0,30.8-25.1,55.9-55.9,55.9h-12.8V272h12.8c5.5,0,10-4.4,10-10V134.8L501.1,134.6z"/>
+			
+				<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="432.5331" y1="103.2839" x2="811.1266" y2="103.2839" gradientTransform="matrix(1 0 0 1 0 123)">
+				<stop  offset="0" style="stop-color:#FF554B"/>
+				<stop  offset="1" style="stop-color:#F9C529"/>
+			</linearGradient>
+			<path class="st6" d="M811.1,134.9l-77,182.8h-49.6l-15.9-37.6l-15.9,37.6h-49.6L526,134.9h49.6l52.2,124.1l15.9-37.6l-36.3-86.4
+				h49.6l52.2,124.1l52.2-124.1L811.1,134.9L811.1,134.9z"/>
+		</g>
 	</g>
 </g>
 </svg>
