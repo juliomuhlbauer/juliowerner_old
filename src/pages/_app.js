@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
             "Júlio Werner is a Designer and Developer focused on the digital market",
           images: [
             {
-              url: "/Banner.png",
+              url: "/Banner 1.png",
               width: 1200,
               height: 627,
               alt:
