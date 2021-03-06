@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
           {
             name: "keywords",
             content:
-              "Design, Desenvolvimento, Startup, Programção, Identidade Visual",
+              "Design, Development, Desenvolvimento, Startup, Programming, Programação, Identidade Visual",
           },
         ]}
         openGraph={{
