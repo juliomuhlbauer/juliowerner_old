@@ -5,6 +5,31 @@ const config = {
 };
 const customTheme = extendTheme({
   ...theme,
+  styles: {
+    global: {
+      "html": {
+        "scrollBehavior": "smooth",
+        "-webkit-tap-highlight-color": "transparent",
+      },
+      "::selection": {
+        background: "pallete.500",
+      },
+      "::-webkit-scrollbar-thumb:hover": {
+        background: "pallete.500",
+      },
+      "::-webkit-scrollbar": {
+        width: "8px",
+        height: "8px ",
+      },
+      "::-webkit-scrollbar-corner": {
+        bg: "transparent",
+      },
+      "::-webkit-scrollbar-thumb": {
+        borderRadius: "5px",
+        bgColor: "gray.600",
+      },
+    },
+  },
   config,
   fonts: {
     body: "Inter, sans-serif",
