@@ -1,4 +1,3 @@
-import Head from "next/head";
 import NextLink from "next/link";
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import {
@@ -33,9 +32,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Júlio Werner</title>
-      </Head>
       <Opacity>
         <Box as="header" pos="fixed" w="100vw">
           <Flex my={8} mx={12}>
@@ -54,12 +50,16 @@ export default function Home() {
               </MenuButton>
               <MenuList>
                 <NextLink href="/">
-                  <MenuItem icon={<ReactCountryFlag countryCode="US" svg />}>
+                  <MenuItem
+                    rounded={4}
+                    icon={<ReactCountryFlag countryCode="US" svg />}
+                  >
                     English
                   </MenuItem>
                 </NextLink>
                 <NextLink href="br">
                   <MenuItem
+                    rounded={4}
                     icon={<ReactCountryFlag countryCode="BR" svg />}
                     command={<CheckIcon />}
                   >
