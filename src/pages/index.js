@@ -58,6 +58,7 @@ export default function Home() {
               <MenuList>
                 <NextLink href="/">
                   <MenuItem
+                    rounded={4}
                     icon={<ReactCountryFlag countryCode="US" svg />}
                     command={<CheckIcon />}
                   >
@@ -65,7 +66,10 @@ export default function Home() {
                   </MenuItem>
                 </NextLink>
                 <NextLink href="br">
-                  <MenuItem icon={<ReactCountryFlag countryCode="BR" svg />}>
+                  <MenuItem
+                    rounded={4}
+                    icon={<ReactCountryFlag countryCode="BR" svg />}
+                  >
                     Português
                   </MenuItem>
                 </NextLink>
