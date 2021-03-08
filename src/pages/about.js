@@ -42,8 +42,8 @@ export default function About() {
         direction={{ base: "column", md: "row" }}
       >
         <Text fontSize="2xl" fontWeight="700">
-          Hey, my name is Júlio Werner. I 18 years old and I live in São Paulo,
-          Brazil.
+          Hey, my name is Júlio Werner. I´m 18 years old and I live in São
+          Paulo, Brazil.
           <br /> <br /> I'm a designer, programmer and sometimes entrepreneur.
           <br /> <br /> I am currently studying Business Administration at IMT -
           Mauá Institute of Technology.
