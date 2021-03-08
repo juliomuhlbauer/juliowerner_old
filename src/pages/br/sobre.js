@@ -40,7 +40,7 @@ export default function Sobre() {
         direction={{ base: "column", md: "row" }}
       >
         <Text fontSize="2xl" fontWeight="700">
-          Olá, me chamo Júlio Werner. Tenho 17 anos e moro em São Paulo.
+          Olá, me chamo Júlio Werner. Tenho 18 anos e moro em São Paulo.
           <br /> <br /> Sou designer, programador e, de vez em quando,
           empreendedor. <br /> <br /> Atualmente estou estudando Administração
           de Empresas no IMT - Instituto Mauá de Tecnologia.
