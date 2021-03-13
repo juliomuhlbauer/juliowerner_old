@@ -51,6 +51,11 @@ function MyApp({ Component, pageProps }) {
             },
           ],
         }}
+        twitter={{
+          handle: "@juliowernermm",
+          site: "@juliowernermm",
+          cardType: "summary_large_image",
+        }}
       />
       <ChakraProvider resetCSS theme={customTheme}>
         <Component {...pageProps} />
