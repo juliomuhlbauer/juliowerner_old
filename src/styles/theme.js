@@ -6,12 +6,12 @@ const config = {
 
 const customTheme = extendTheme({
   ...theme,
+  config,
   styles: {
     global: {
       "html": {
-        "scrollBehavior": "smooth",
-        "-webkit-tap-highlight-color": "transparent",
-        "focusBorderColor": "pink.400",
+        scrollBehavior: "smooth",
+        WebkitTapHighlightColor: "transparent",
       },
       "::selection": {
         color: "white",
@@ -32,11 +32,11 @@ const customTheme = extendTheme({
         bg: "transparent",
       },
       "button:focus": {
-        "box-shadow": "0 0 0 3px #F56235 !important",
+        boxShadow: "0 0 0 3px #F56235 !important",
       },
     },
   },
-  config,
+
   fonts: {
     body: "Inter, sans-serif",
     heading: "Inter, sans-serif",
