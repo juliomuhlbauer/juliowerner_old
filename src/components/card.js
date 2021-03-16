@@ -24,6 +24,8 @@ export default function Card(props) {
           src={props.image}
           transform={"scale(" + props.scale + ")"}
           maxH="200px"
+          htmlWidth="200px"
+          htmlHeight="200px"
           alt={props.alt}
         />
       </Box>

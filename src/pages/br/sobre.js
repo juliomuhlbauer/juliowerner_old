@@ -40,8 +40,8 @@ export default function Sobre() {
 
         <Image
           borderRadius="lg"
-          htmlWidth="400px"
-          htmlHeight="400px"
+          htmlWidth="250px"
+          htmlHeight="250px"
           boxSize={{ base: "350px", md: "400px" }}
           src="/Picture.png"
         />

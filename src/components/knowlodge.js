@@ -29,6 +29,7 @@ export default function Knowlodge(props) {
           src={props.image}
           h="64px"
           maxW="100px"
+          htmlHeight="64px"
         />
 
         <Stack>
