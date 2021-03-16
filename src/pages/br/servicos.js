@@ -12,8 +12,9 @@ export default function Servicos() {
           justify="center"
           spacing={12}
         >
-          {ServicesData.map((ServicesData) => (
+          {ServicesData.map((ServicesData, index) => (
             <Card
+              key={index}
               title={ServicesData.title_br}
               image={ServicesData.image}
               alt={ServicesData.title_br}

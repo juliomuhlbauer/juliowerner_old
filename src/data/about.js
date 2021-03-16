@@ -1,4 +1,3 @@
-import { useColorModeValue } from "@chakra-ui/color-mode";
 import { CheckIcon } from "@chakra-ui/icons";
 
 export const KnowlodgeData = [
@@ -46,13 +45,7 @@ export const KnowlodgeData = [
       { image: "/knowlodge/code/CSS.png", value: "75" },
       { image: "/knowlodge/code/JavaScript.png", value: "25" },
       { image: "/knowlodge/code/React.png", value: "25" },
-      // {
-      //   image: useColorModeValue(
-      //     "/knowlodge/code/NextJS.png",
-      //     "/knowlodge/code/NextJS White.png"
-      //   ),
-      //   value: "50",
-      // },
+      { image: "/knowlodge/code/NextJS White.png", value: "50" },
       { image: "/knowlodge/code/Flutter.png", value: "25" },
       { image: "/knowlodge/code/Firebase.png", value: "25" },
     ],

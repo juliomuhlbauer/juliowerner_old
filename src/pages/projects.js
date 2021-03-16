@@ -13,8 +13,8 @@ export default function Projects() {
           justify="center"
           spacing={12}
         >
-          {ProjectsData.map((ProjectsData) => (
-            <Link isExternal href={ProjectsData.link}>
+          {ProjectsData.map((ProjectsData, index) => (
+            <Link key={index} isExternal href={ProjectsData.link}>
               <Card
                 title={ProjectsData.title}
                 image={ProjectsData.image}

@@ -19,16 +19,13 @@ export default function Card(props) {
         boxShadow: "2xl",
       }}
     >
-      <Box>
-        <Image
-          src={props.image}
-          transform={"scale(" + props.scale + ")"}
-          maxH="200px"
-          htmlWidth="200px"
-          htmlHeight="200px"
-          alt={props.alt}
-        />
-      </Box>
+      <Image
+        src={props.image}
+        maxH="200px"
+        objectFit="cover"
+        htmlHeight="200px"
+        alt={props.alt}
+      />
       <Heading fontSize="2xl">{props.title}</Heading>
     </Stack>
   );

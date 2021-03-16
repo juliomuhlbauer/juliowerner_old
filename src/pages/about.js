@@ -1,4 +1,11 @@
-import { Divider, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Heading,
+  SimpleGrid,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import Knowlodge from "@/components/knowlodge";
 import Page from "@/components/page";
 import { KnowlodgeData } from "@/data/about";
@@ -57,8 +64,8 @@ export default function About() {
         Here are some of my knowlodge:
       </Heading>
 
-      {KnowlodgeData.map((KnowlodgeData) => (
-        <>
+      {KnowlodgeData.map((KnowlodgeData, index) => (
+        <Box key={index}>
           <Title title={KnowlodgeData.title} />
           <KnowlodgeSection>
             {KnowlodgeData.items.map((KnowlodgeData) => (
@@ -70,7 +77,7 @@ export default function About() {
               />
             ))}
           </KnowlodgeSection>
-        </>
+        </Box>
       ))}
     </Page>
   );
