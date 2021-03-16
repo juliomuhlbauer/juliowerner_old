@@ -1,11 +1,4 @@
-import {
-  Divider,
-  Heading,
-  Image,
-  SimpleGrid,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Divider, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import Knowlodge from "@/components/knowlodge";
 import Page from "@/components/page";
 import { KnowlodgeData } from "@/data/about";
