@@ -7,12 +7,14 @@ import {
   Spacer,
   Box,
   Portal,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import { ArrowBackIcon } from "@chakra-ui/icons";
 import Animation from "@/components/animation";
 import Opacity from "@/components/opacity";
 
 export default function Nav(props) {
+  const mobile = useBreakpointValue({ base: true, md: false });
   return (
     <>
       <Animation>
@@ -38,37 +40,38 @@ export default function Nav(props) {
       </Animation>
       <Portal>
         <Opacity>
-          <Box
-            display={{ base: "none", md: "block" }}
-            pos="fixed"
-            top={8}
-            ml={12}
-          >
-            <NextLink href="./">
-              <IconButton
-                variant="outline"
-                colorScheme="pallete"
-                icon={<ArrowBackIcon />}
-              />
-            </NextLink>
-          </Box>
-          <Box
-            display={{ base: "block", md: "none" }}
-            pos="fixed"
-            bottom={8}
-            ml={12}
-          >
-            <NextLink href="./">
-              <Box>
+          {mobile ? (
+            <Box
+              display={{ base: "block", md: "none" }}
+              pos="fixed"
+              bottom={8}
+              ml={12}
+            >
+              <NextLink href="./">
                 <IconButton
                   size="lg"
                   colorScheme="pallete"
                   icon={<ArrowBackIcon />}
                   isRound
                 />
-              </Box>
-            </NextLink>
-          </Box>
+              </NextLink>
+            </Box>
+          ) : (
+            <Box
+              display={{ base: "none", md: "block" }}
+              pos="fixed"
+              top={8}
+              ml={12}
+            >
+              <NextLink href="./">
+                <IconButton
+                  variant="outline"
+                  colorScheme="pallete"
+                  icon={<ArrowBackIcon />}
+                />
+              </NextLink>
+            </Box>
+          )}
         </Opacity>
       </Portal>
     </>
