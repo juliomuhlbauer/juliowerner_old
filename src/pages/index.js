@@ -16,7 +16,6 @@ import {
   Spacer,
   Stack,
   useColorMode,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import Animation from "@/components/animation";
 import ReactCountryFlag from "react-country-flag";

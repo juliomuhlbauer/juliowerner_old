@@ -1,4 +1,3 @@
-import { CheckIcon } from "@chakra-ui/icons";
 import {
   Divider,
   Heading,
@@ -6,11 +5,11 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import Knowlodge from "@/components/knowlodge";
 import Page from "@/components/page";
 import { KnowlodgeData } from "@/data/about";
+import Image from "@/components/image";
 
 function Title(props) {
   return (

@@ -1,12 +1,6 @@
-import {
-  Box,
-  Heading,
-  Image,
-  Stack,
-  useColorModeValue,
-  WrapItem,
-} from "@chakra-ui/react";
+import { Box, Heading, Stack, useColorModeValue } from "@chakra-ui/react";
 import NextImage from "next/image";
+import Image from "@/components/image";
 
 export default function Card(props) {
   return (

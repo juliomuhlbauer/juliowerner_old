@@ -1,14 +1,12 @@
 import {
-  Image,
   Progress,
   SimpleGrid,
   Box,
   useColorModeValue,
-  IconButton,
   Stack,
   Text,
-  Flex,
 } from "@chakra-ui/react";
+import Image from "@/components/image";
 
 export default function Knowlodge(props) {
   return (
