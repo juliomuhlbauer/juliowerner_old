@@ -50,7 +50,7 @@ export default function Sobre() {
           htmlWidth="250px"
           htmlHeight="250px"
           boxSize={{ base: "350px", md: "400px" }}
-          src="/Picture.webp"
+          src="https://ik.imagekit.io/juliowerner/Picture_yyApvmnJX.webp"
         />
       </Stack>
       <Text

@@ -1,12 +1,7 @@
 export const ProjectsData = [
   {
     title: "A Rede do Futuro",
-    image: "/projects/RDF.png",
+    image: "https://ik.imagekit.io/juliowerner/RDF_mtj1wpspI.png",
     link: "https://arededofuturo.com.br/",
-  },
-  {
-    title: "App - A Rede do Futuro",
-    image: "/projects/App - RDF.png",
-    link: "https://arededofuturo.glideapp.io/",
   },
 ];
