@@ -51,7 +51,7 @@ export default function About() {
           htmlWidth="400px"
           htmlHeight="400px"
           boxSize={{ base: "350px", md: "400px" }}
-          src="/Picture.png"
+          src="/Picture.webp"
         />
       </Stack>
       <Heading
