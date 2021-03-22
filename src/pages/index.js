@@ -116,7 +116,7 @@ export default function Home() {
                 />
                 <IconButton
                   as="a"
-                  href="https://github.com/juliowernermm"
+                  href="https://github.com/julio-werner/"
                   target="_blank"
                   icon={<FaGithub size={32} />}
                 />
