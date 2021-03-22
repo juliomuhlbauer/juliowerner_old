@@ -26,7 +26,7 @@ import {
   SunIcon,
 } from "@chakra-ui/icons";
 import Opacity from "@/components/opacity";
-import { FaGithub, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
