@@ -9,6 +9,7 @@ import {
   Flex,
   Heading,
   IconButton,
+  Link,
   Menu,
   MenuButton,
   MenuItem,
@@ -27,6 +28,22 @@ import {
 } from "@chakra-ui/icons";
 import Opacity from "@/components/opacity";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Links } from "@/data/links";
+
+const Areas = [
+  {
+    title: "Services",
+    link: "/services",
+  },
+  {
+    title: "Projects",
+    link: "/projects",
+  },
+  {
+    title: "Sobre",
+    link: "/about",
+  },
+];
 
 export default function Home() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -95,37 +112,24 @@ export default function Home() {
             </Center>
             <Center>
               <ButtonGroup spacing={4}>
-                <NextLink href="services">
-                  <Button>Services</Button>
-                </NextLink>
-                <NextLink href="projects">
-                  <Button>Projects</Button>
-                </NextLink>
-                <NextLink href="about">
-                  <Button>About</Button>
-                </NextLink>
+                {Areas.map((Areas, index) => (
+                  <NextLink key={index} href={Areas.link} passHref>
+                    <Button>{Areas.title}</Button>
+                  </NextLink>
+                ))}
               </ButtonGroup>
             </Center>
             <Center>
               <ButtonGroup spacing={4} size="lg">
-                <IconButton
-                  as="a"
-                  href="https://www.instagram.com/juliowernermm/"
-                  target="_blank"
-                  icon={<FaInstagram size={32} />}
-                />
-                <IconButton
-                  as="a"
-                  href="https://github.com/julio-werner/"
-                  target="_blank"
-                  icon={<FaGithub size={32} />}
-                />
-                <IconButton
-                  as="a"
-                  href="https://www.linkedin.com/in/julio-werner/"
-                  target="_blank"
-                  icon={<FaLinkedin size={32} />}
-                />
+                {Links.map((Links, index) => (
+                  <IconButton
+                    key={index}
+                    as={Link}
+                    href={Links.link}
+                    isExternal
+                    icon={Links.icon}
+                  />
+                ))}
               </ButtonGroup>
             </Center>
           </Stack>

@@ -34,6 +34,9 @@ const customTheme = extendTheme({
       "button:focus": {
         boxShadow: "0 0 0 3px #F56235 !important",
       },
+      "a:focus": {
+        boxShadow: "0 0 0 3px #F56235 !important",
+      },
     },
   },
 
