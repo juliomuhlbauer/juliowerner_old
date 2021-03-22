@@ -36,7 +36,9 @@ function MyApp({ Component, pageProps }) {
             "Júlio Werner is a Designer and Developer focused on the digital market",
           images: [
             {
-              url: "https://ik.imagekit.io/juliowerner/Banner.png",
+              url: "https://ik.imagekit.io/juliowerner/banner.png",
+              width: 1240,
+              height: 480,
               alt:
                 "Júlio Werner is a Designer and Developer focused on the digital market",
             },
