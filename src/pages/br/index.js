@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { FaGithub, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import {
   Box,
   Button,
@@ -113,6 +113,12 @@ export default function Home() {
                   href="https://github.com/julio-werner/"
                   target="_blank"
                   icon={<FaGithub size={32} />}
+                />
+                <IconButton
+                  as="a"
+                  href="https://www.linkedin.com/in/julio-werner/"
+                  target="_blank"
+                  icon={<FaLinkedin size={32} />}
                 />
               </ButtonGroup>
             </Center>

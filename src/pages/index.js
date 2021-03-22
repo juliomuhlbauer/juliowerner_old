@@ -120,6 +120,12 @@ export default function Home() {
                   target="_blank"
                   icon={<FaGithub size={32} />}
                 />
+                <IconButton
+                  as="a"
+                  href="https://www.linkedin.com/in/julio-werner/"
+                  target="_blank"
+                  icon={<FaLinkedin size={32} />}
+                />
               </ButtonGroup>
             </Center>
           </Stack>
