@@ -3,17 +3,17 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 export const Links = [
   {
     title: "Instagram",
-    link: "https://www.instagram.com/juliowernermm/",
+    link: "https://juliowerner.com/instagram",
     icon: <FaInstagram size={32} />,
   },
   {
     title: "GitHub",
-    link: "https://github.com/julio-werner/",
+    link: "https://juliowerner.com/github",
     icon: <FaGithub size={32} />,
   },
   {
-    title: "Instagram",
-    link: "https://www.linkedin.com/in/julio-werner/",
+    title: "LinkedIn",
+    link: "https://juliowerner.com/linkedin",
     icon: <FaLinkedin size={32} />,
   },
 ];

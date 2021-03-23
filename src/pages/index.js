@@ -1,6 +1,5 @@
 import Head from "next/head";
 import NextLink from "next/link";
-
 import {
   Box,
   Button,
@@ -27,7 +26,6 @@ import {
   SunIcon,
 } from "@chakra-ui/icons";
 import Opacity from "@/components/opacity";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Links } from "@/data/links";
 
 const Areas = [
@@ -56,12 +54,12 @@ export default function Home() {
       </Head>
 
       <Opacity>
-        <Box as="header" pos="fixed" w="100vw">
+        <Box zIndex={1} as="header" pos="fixed" w="100vw">
           <Flex my={8} mx={12}>
             <IconButton
               icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               onClick={toggleColorMode}
-            ></IconButton>
+            />
             <Spacer />
             <Menu>
               <MenuButton

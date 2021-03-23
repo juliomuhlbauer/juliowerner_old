@@ -22,13 +22,6 @@ function MyApp({ Component, pageProps }) {
       <DefaultSeo
         title="Júlio Werner"
         description="Júlio Werner is a Designer and Developer focused on the digital market"
-        additionalMetaTags={[
-          {
-            name: "keywords",
-            content:
-              "Design, Development, Desenvolvimento, Startup, Programming, Programação, Identidade Visual",
-          },
-        ]}
         openGraph={{
           url: "https://juliowerner.com",
           title: "Júlio Werner",
@@ -36,7 +29,7 @@ function MyApp({ Component, pageProps }) {
             "Júlio Werner is a Designer and Developer focused on the digital market",
           images: [
             {
-              url: "https://ik.imagekit.io/juliowerner/banner.png",
+              url: "/banner/Banner.png",
               width: 1240,
               height: 480,
               alt:

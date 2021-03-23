@@ -49,12 +49,12 @@ export default function Home() {
   return (
     <>
       <Opacity>
-        <Box as="header" pos="fixed" w="100vw">
+        <Box zIndex={1} as="header" pos="fixed" w="100vw">
           <Flex my={8} mx={12}>
             <IconButton
               icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               onClick={toggleColorMode}
-            ></IconButton>
+            />
             <Spacer />
             <Menu>
               <MenuButton
