@@ -40,7 +40,7 @@ const Areas = [
     link: "/projects",
   },
   {
-    title: "Sobre",
+    title: "About",
     link: "/about",
   },
 ];
