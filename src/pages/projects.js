@@ -1,4 +1,4 @@
-import { Center, Link, SimpleGrid } from "@chakra-ui/react";
+import { Center, Link, LinkBox, SimpleGrid } from "@chakra-ui/react";
 import Card from "@/components/card";
 import Page from "@/components/page";
 import { ProjectsData } from "@/data/projects";
@@ -14,13 +14,13 @@ export default function Projects() {
           spacing={12}
         >
           {ProjectsData.map((ProjectsData, index) => (
-            <Link key={index} isExternal href={ProjectsData.link}>
-              <Card
-                title={ProjectsData.title}
-                image={ProjectsData.image}
-                alt={ProjectsData.title}
-              />
-            </Link>
+            <Card
+              key={index}
+              link={ProjectsData.link}
+              title={ProjectsData.title}
+              image={ProjectsData.image}
+              alt={ProjectsData.title}
+            />
           ))}
         </SimpleGrid>
       </Center>

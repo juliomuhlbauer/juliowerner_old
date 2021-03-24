@@ -14,13 +14,13 @@ export default function Projetos() {
           spacing={12}
         >
           {ProjectsData.map((ProjectsData, index) => (
-            <Link key={index} isExternal href={ProjectsData.link}>
-              <Card
-                title={ProjectsData.title}
-                image={ProjectsData.image}
-                alt={ProjectsData.title}
-              />
-            </Link>
+            <Card
+              key={index}
+              link={ProjectsData.link}
+              title={ProjectsData.title}
+              image={ProjectsData.image}
+              alt={ProjectsData.title}
+            />
           ))}
         </SimpleGrid>
       </Center>
