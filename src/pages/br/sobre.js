@@ -68,6 +68,7 @@ export default function Sobre() {
             {KnowlodgeData.items.map((KnowlodgeData) => (
               <Knowlodge
                 image={KnowlodgeData.image}
+                image2={KnowlodgeData.image2}
                 value={KnowlodgeData.value}
                 icon={KnowlodgeData.icon}
                 text={KnowlodgeData.text}

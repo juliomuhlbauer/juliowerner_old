@@ -11,7 +11,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <link rel="icon" href="/Logo.svg" />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"

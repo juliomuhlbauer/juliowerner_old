@@ -26,7 +26,10 @@ export default function Knowlodge(props) {
         <Image
           borderRadius={props.radius}
           justifySelf="left"
-          src={props.image}
+          src={useColorModeValue(
+            props.image2 ? props.image2 : props.image,
+            props.image,
+          )}
           h="64px"
           maxW="100px"
           htmlHeight="64px"
