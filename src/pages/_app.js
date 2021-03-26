@@ -33,13 +33,13 @@ function MyApp({ Component, pageProps }) {
           description: description,
           images: [
             {
-              url: "/banner/Banner.png",
+              url: "https://juliowerner.com/banner/banner.png",
               width: 1200,
               height: 630,
               alt: { description },
             },
             {
-              url: "/banner/Banner 2.png",
+              url: "https://juliowerner.com/banner/banner2.png",
               width: 300,
               height: 300,
               alt: { description },
