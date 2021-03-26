@@ -28,6 +28,7 @@ function MyApp({ Component, pageProps }) {
         title={title}
         description={description}
         openGraph={{
+          type: "website",
           url: url,
           title: "Júlio Werner",
           description: description,
@@ -40,8 +41,6 @@ function MyApp({ Component, pageProps }) {
             },
             {
               url: "https://juliowerner.com/banner/banner2.png",
-              width: 300,
-              height: 300,
               alt: description,
             },
           ],
