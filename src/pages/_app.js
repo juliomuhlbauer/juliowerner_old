@@ -34,9 +34,9 @@ function MyApp({ Component, pageProps }) {
           description: description,
           images: [
             {
-              url: "https://juliowerner.com/banner/banner.png",
-              width: 1200,
-              height: 630,
+              url:
+                "https://res.cloudinary.com/juliowerner/image/upload/v1616790970/banner/banner.png",
+
               alt: description,
             },
           ],
