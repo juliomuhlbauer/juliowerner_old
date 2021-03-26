@@ -39,10 +39,6 @@ function MyApp({ Component, pageProps }) {
               height: 630,
               alt: description,
             },
-            {
-              url: "https://juliowerner.com/banner/banner2.png",
-              alt: description,
-            },
           ],
         }}
         twitter={{
