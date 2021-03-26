@@ -6,6 +6,11 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import * as gtag from "@/lib/gtag";
 
+const title = "Júlio Werner";
+const url = "https://juliowerner.com";
+const description =
+  "Júlio Werner is a Designer and Developer focused on the digital market";
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   useEffect(() => {
@@ -20,20 +25,24 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo
-        title="Júlio Werner"
-        description="Júlio Werner is a Designer and Developer focused on the digital market"
+        title={title}
+        description={description}
         openGraph={{
-          url: "https://juliowerner.com",
+          url: url,
           title: "Júlio Werner",
-          description:
-            "Júlio Werner is a Designer and Developer focused on the digital market",
+          description: description,
           images: [
             {
-              url: "/Banner1.png",
+              url: "/Banner.png",
               width: 1200,
               height: 630,
-              alt:
-                "Júlio Werner is a Designer and Developer focused on the digital market",
+              alt: { description },
+            },
+            {
+              url: "/Banner 2.png",
+              width: 300,
+              height: 300,
+              alt: { description },
             },
           ],
         }}
