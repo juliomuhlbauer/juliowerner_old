@@ -49,7 +49,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        {/* <title>Júlio Werner</title> */}
+        <title>Júlio Werner</title>
         <link rel="icon" href="/Logo.svg" />
       </Head>
 

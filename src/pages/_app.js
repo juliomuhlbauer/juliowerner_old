@@ -33,13 +33,13 @@ function MyApp({ Component, pageProps }) {
           description: description,
           images: [
             {
-              url: "/Banner.png",
+              url: "/banner/Banner.png",
               width: 1200,
               height: 630,
               alt: { description },
             },
             {
-              url: "/Banner 2.png",
+              url: "/banner/Banner 2.png",
               width: 300,
               height: 300,
               alt: { description },
