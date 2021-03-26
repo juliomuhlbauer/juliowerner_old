@@ -33,15 +33,9 @@ function MyApp({ Component, pageProps }) {
           description: description,
           images: [
             {
-              url: "https://juliowerner.com/banner/banner.png",
+              url: "https://juliowerner.com/banner/banner.jpg",
               width: 1200,
               height: 630,
-              alt: { description },
-            },
-            {
-              url: "https://juliowerner.com/banner/banner2.png",
-              width: 300,
-              height: 300,
               alt: { description },
             },
           ],
