@@ -8,7 +8,7 @@ export default function Projetos() {
     <Page title="Projetos">
       <Center as="section" h={{ base: "100%", xl: "75vh" }}>
         <SimpleGrid
-          // templateColumns={{ base: "1fr", md: "1fr 1fr", xl: "1fr 1fr 1fr" }}
+          templateColumns={{ base: "1fr", md: "1fr 1fr", xl: "1fr 1fr 1fr" }}
           my={4}
           justify="center"
           spacing={12}

@@ -36,7 +36,8 @@ function MyApp({ Component, pageProps }) {
             {
               url:
                 "https://res.cloudinary.com/juliowerner/image/upload/v1616790970/banner/banner.png",
-
+              width: 1200,
+              height: 630,
               alt: description,
             },
           ],
