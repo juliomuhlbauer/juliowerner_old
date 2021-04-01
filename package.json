@@ -12,6 +12,7 @@
     "@chakra-ui/react": "^1.4.2",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
+    "airtable": "^0.10.1",
     "framer-motion": "^3.10.6",
     "isomorphic-fetch": "^3.0.0",
     "next": "10.0.6",
