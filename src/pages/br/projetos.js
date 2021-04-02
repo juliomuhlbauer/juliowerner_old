@@ -3,7 +3,7 @@ import Card from "@/components/card";
 import Page from "@/components/page";
 import Airtable from "airtable";
 
-export async function getStaticProps() {
+export async function getSer() {
   const airtable = new Airtable({
     apiKey: process.env.AIRTABLE_API_KEY,
   });
@@ -27,7 +27,6 @@ export async function getStaticProps() {
     props: {
       projects,
     },
-    revalidate: 60,
   };
 }
 
