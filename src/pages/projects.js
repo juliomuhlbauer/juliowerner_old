@@ -3,7 +3,7 @@ import Card from "@/components/card";
 import Page from "@/components/page";
 import Airtable from "airtable";
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const airtable = new Airtable({
     apiKey: process.env.AIRTABLE_API_KEY,
   });
