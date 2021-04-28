@@ -10,9 +10,7 @@ export async function getStaticProps() {
 
   const records = await airtable
     .base("appG7EIhRu9l6fKVI")("Projects")
-    .select({
-      fields: ["Name", "Image", "Link"],
-    })
+    .select()
     .all();
 
   const projects = records.map((project) => {
