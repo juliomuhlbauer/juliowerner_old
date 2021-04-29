@@ -20,6 +20,8 @@ export async function getStaticProps() {
       link: project.get("Link") || null,
       status: project.get("Status") || null,
       order: project.get("Order") || null,
+      color: project.get("Color") || null,
+      bg: project.get("BG") || null,
     };
   });
 
@@ -41,12 +43,15 @@ export default function Projetos({ projects }) {
         >
           {projects
             .filter((projects) => projects.status)
-            .map((projects, index) => (
+            .sort((a, b) => a.order - b.order)
+            .map((projects) => (
               <Card
-                key={index}
+                key={projects.order}
                 link={projects.link}
                 title={projects.name}
                 image={projects.image}
+                color={projects.color}
+                bg={projects.bg}
                 alt={projects.name}
               />
             ))}

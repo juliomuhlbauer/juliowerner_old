@@ -20,6 +20,7 @@ export default function Card(props) {
         w="320px"
         h="320px"
         bg={useColorModeValue("white", "gray.700")}
+        bgColor={props.bg}
         rounded={"md"}
         boxShadow={"xl"}
         spacing={6}
@@ -38,7 +39,9 @@ export default function Card(props) {
           alt={props.alt}
         />
 
-        <Heading fontSize="2xl">{props.title}</Heading>
+        <Heading color={props.color} fontSize="2xl">
+          {props.title}
+        </Heading>
       </Stack>
     </Box>
   );
