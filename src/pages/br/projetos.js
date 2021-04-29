@@ -15,9 +15,11 @@ export async function getStaticProps() {
 
   const projects = records.map((project) => {
     return {
-      name: project.get("Name"),
-      image: project.get("Image"),
-      link: project.get("Link"),
+      name: project.get("Name") || null,
+      image: project.get("Image") || null,
+      link: project.get("Link") || null,
+      status: project.get("Status") || null,
+      order: project.get("Order") || null,
     };
   });
 
@@ -27,7 +29,6 @@ export async function getStaticProps() {
     },
   };
 }
-
 export default function Projetos({ projects }) {
   return (
     <Page title="Projetos">
@@ -38,15 +39,17 @@ export default function Projetos({ projects }) {
           justify="center"
           spacing={12}
         >
-          {projects.map((projects, index) => (
-            <Card
-              key={index}
-              link={projects.link}
-              title={projects.name}
-              image={projects.image}
-              alt={projects.name}
-            />
-          ))}
+          {projects
+            .filter((projects) => projects.status)
+            .map((projects, index) => (
+              <Card
+                key={index}
+                link={projects.link}
+                title={projects.name}
+                image={projects.image}
+                alt={projects.name}
+              />
+            ))}
         </SimpleGrid>
       </Center>
     </Page>
