@@ -68,8 +68,10 @@ export default function About() {
         <Box key={index}>
           <Title title={KnowlodgeData.title} />
           <KnowlodgeSection>
-            {KnowlodgeData.items.map((KnowlodgeData) => (
+            {KnowlodgeData.items.map((KnowlodgeData, index) => (
               <Knowlodge
+                key={index}
+                title={KnowlodgeData.title}
                 image={KnowlodgeData.image}
                 image2={KnowlodgeData.image2}
                 value={KnowlodgeData.value}

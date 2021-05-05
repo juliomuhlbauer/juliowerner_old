@@ -30,10 +30,6 @@ import { Links } from "@/data/links";
 
 const Areas = [
   {
-    title: "Services",
-    link: "/services",
-  },
-  {
     title: "Projects",
     link: "/projects",
   },

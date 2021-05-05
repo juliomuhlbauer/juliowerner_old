@@ -5,6 +5,7 @@ import {
   useColorModeValue,
   Stack,
   Text,
+  Heading,
 } from "@chakra-ui/react";
 import Image from "@/components/image";
 
@@ -36,12 +37,13 @@ export default function Knowlodge(props) {
         />
 
         <Stack>
-          <Progress
+          {/* <Progress
             colorScheme="pallete"
             rounded={8}
             w="100%"
             value={props.value}
-          />
+          /> */}
+          <Heading>{props.title}</Heading>
           <Stack direction="row" spacing={2} align="center">
             {props.icon}
             <Text>{props.text}</Text>
