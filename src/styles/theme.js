@@ -37,6 +37,18 @@ const customTheme = extendTheme({
       "a:focus": {
         boxShadow: "0 0 0 3px #F56235 !important",
       },
+      "#nprogress": {
+        pointerEvents: "none",
+      },
+      "#nprogress .bar": {
+        background: "jw.200",
+        position: "fixed",
+        zIndex: "1031",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "2px",
+      },
     },
   },
 
@@ -47,6 +59,12 @@ const customTheme = extendTheme({
 
   colors: {
     pallete: {
+      100: "#FFE345",
+      200: "#F45831", //Dark
+      500: "#F45831",
+      600: "#F23A1F", //Light
+    },
+    jw: {
       100: "#FFE345",
       200: "#F45831", //Dark
       500: "#F45831",
