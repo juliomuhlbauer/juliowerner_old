@@ -19,7 +19,7 @@ import {
 } from "@chakra-ui/react";
 import Animation from "@/components/animation";
 import Opacity from "@/components/opacity";
-import Nav from "@/components/Nav";
+import Nav from "@/components/nav";
 
 const TimelineData = [
   {
