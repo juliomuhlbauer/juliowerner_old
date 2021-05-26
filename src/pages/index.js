@@ -159,6 +159,8 @@ export default function Home() {
             borderRadius="xl"
             src="/Picture.png"
             w={{ base: "300px", md: "350px", lg: "400px" }}
+            htmlWidth={{ base: "300px", md: "350px", lg: "400px" }}
+            htmlHeight={{ base: "300px", md: "350px", lg: "400px" }}
             objectFit="contain"
             m={4}
           />
