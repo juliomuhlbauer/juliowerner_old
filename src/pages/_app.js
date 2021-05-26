@@ -23,6 +23,7 @@ const description =
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url);
@@ -32,6 +33,7 @@ function MyApp({ Component, pageProps }) {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
+
   return (
     <>
       <DefaultSeo

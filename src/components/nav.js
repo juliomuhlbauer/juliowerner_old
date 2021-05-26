@@ -1,79 +1,38 @@
+import { Button, ButtonGroup, IconButton } from "@chakra-ui/button";
+import { Img } from "@chakra-ui/image";
+import { Flex, Link, Spacer } from "@chakra-ui/layout";
+import { Links } from "@/data/links";
 import NextLink from "next/link";
 
-import {
-  IconButton,
-  Heading,
-  Flex,
-  Spacer,
-  Box,
-  Portal,
-  useBreakpointValue,
-} from "@chakra-ui/react";
-import { ArrowBackIcon } from "@chakra-ui/icons";
-import Animation from "@/components/animation";
-import Opacity from "@/components/opacity";
-
-export default function Nav(props) {
-  const mobile = useBreakpointValue({ base: true, md: false });
+export default function Nav() {
   return (
-    <>
-      <Animation>
-        <Flex
-          as="header"
-          m={6}
-          mb={12}
-          alignItems="center"
-          justify="space-around"
-        >
-          <Spacer />
-          <Heading
-            as="h1"
-            bgGradient="linear(to-r, pallete.600,pallete.100)"
-            bgClip="text"
-            fontSize="5xl"
-            fontWeight="bold"
-          >
-            {props.children}
-          </Heading>
-          <Spacer />
-        </Flex>
-      </Animation>
-      <Portal>
-        <Opacity>
-          {mobile ? (
-            <Box
-              display={{ base: "block", md: "none" }}
-              pos="fixed"
-              bottom={8}
-              ml={12}
-            >
-              <NextLink href="./">
-                <IconButton
-                  size="lg"
-                  colorScheme="pallete"
-                  icon={<ArrowBackIcon />}
-                  isRound
-                />
-              </NextLink>
-            </Box>
-          ) : (
-            <Box
-              display={{ base: "none", md: "block" }}
-              pos="fixed"
-              top={8}
-              ml={12}
-            >
-              <NextLink href="./">
-                <IconButton
-                  variant="outline"
-                  colorScheme="pallete"
-                  icon={<ArrowBackIcon />}
-                />
-              </NextLink>
-            </Box>
-          )}
-        </Opacity>
-      </Portal>
-    </>
+    <Flex as="nav" m="auto" maxW="4xl" align="center" px={4}>
+      <NextLink href="/">
+        <Img
+          _hover={{
+            cursor: "pointer",
+          }}
+          alt="Logo JW"
+          src="/Logo.svg"
+          htmlWidth="100px"
+          w="100px"
+          objectFit="contain"
+        />
+      </NextLink>
+      <Spacer />
+      <ButtonGroup spacing={6} size="lg">
+        {Links.map((Links, index) => (
+          <IconButton
+            colorScheme="jw"
+            variant="ghost"
+            key={index}
+            as={Link}
+            href={Links.link}
+            isExternal
+            icon={Links.icon}
+          />
+        ))}
+      </ButtonGroup>
+    </Flex>
   );
 }
