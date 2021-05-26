@@ -72,10 +72,10 @@ export default function Home() {
           as="section"
           p={2}
           align="center"
-          spacing={4}
           flexDirection={{ base: "column-reverse", md: "row" }}
+          maxW="5xl"
         >
-          <Stack spacing={4} maxW="xl">
+          <Stack m={4} spacing={4}>
             <Heading
               as="h1"
               textAlign="center"
@@ -101,7 +101,7 @@ export default function Home() {
                 <Img src="/logo/RDF.jpg" w="54px" />
                 <Heading
                   textAlign={{ base: "left", md: "left" }}
-                  fontSize="2xl"
+                  fontSize={{ base: "xl", md: "2xl" }}
                   fontWeight="semibold"
                 >
                   Co-Founder & CTO at A Rede do Futuro
@@ -123,9 +123,8 @@ export default function Home() {
                 <Img src="/logo/MBC.jpg" w="54px" />
                 <Heading
                   textAlign={{ base: "left", md: "left" }}
-                  fontSize="2xl"
+                  fontSize={{ base: "xl", md: "2xl" }}
                   fontWeight="semibold"
-                  display="flex"
                 >
                   Member at Mauá Business Club
                 </Heading>
@@ -147,7 +146,7 @@ export default function Home() {
 
                 <Heading
                   textAlign={{ base: "left", md: "left" }}
-                  fontSize="2xl"
+                  fontSize={{ base: "xl", md: "2xl" }}
                   fontWeight="semibold"
                 >
                   Studying Business Administration at Instituto Mauá de
@@ -159,8 +158,9 @@ export default function Home() {
           <Img
             borderRadius="xl"
             src="/Picture.png"
-            w={{ base: "300px", md: "400px" }}
+            w={{ base: "300px", md: "350px", lg: "400px" }}
             objectFit="contain"
+            m={4}
           />
         </Stack>
       </Center>
@@ -170,15 +170,23 @@ export default function Home() {
           <HStack
             key={index}
             spacing={4}
-            my={12}
+            my={6}
             align="center"
             justify="center"
+            as={item.link && Link}
+            href={item.link}
+            isExternal={(item.link && true) || false}
+            _hover={{
+              bgColor: "rgba(244, 88, 49, 0.1)",
+            }}
+            p={4}
+            borderRadius="md"
+            color="jw.500"
+            w="fit-content"
+            mx="auto"
           >
-            <Box textAlign="right" w="200px">
+            <Box textAlign="right" w={{ base: "150px", md: "200px" }}>
               <Heading
-                as={item.link && Link}
-                href={item.link}
-                isExternal
                 fontWeight="semibold"
                 fontSize="xl"
                 color={(!isOdd(index) && "jw.500") || "white"}
@@ -189,13 +197,10 @@ export default function Home() {
 
             <Circle size="30px" bg="jw.500" ring="5px" ringColor="gray.800" />
 
-            <Box textAlign="left" w="200px">
+            <Box textAlign="left" w={{ base: "150px", md: "200px" }}>
               <Heading
-                as={item.link && Link}
-                href={item.link}
-                isExternal
-                fontSize="xl"
                 fontWeight="semibold"
+                fontSize="xl"
                 color={(isOdd(index) && "jw.500") || "white"}
               >
                 {(isOdd(index) && item.title) || item.when}

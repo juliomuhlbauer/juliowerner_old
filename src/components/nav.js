@@ -6,18 +6,25 @@ import NextLink from "next/link";
 
 export default function Nav() {
   return (
-    <Flex as="nav" m="auto" maxW="4xl" align="center" px={4}>
-      <NextLink href="/">
-        <Img
+    <Flex as="nav" m="auto" maxW="4xl" align="center" px={4} py={2}>
+      <NextLink href="/" passHref>
+        <Link
+          borderRadius="md"
           _hover={{
-            cursor: "pointer",
+            bgColor: "rgba(244, 88, 49, 0.1)",
           }}
-          alt="Logo JW"
-          src="/Logo.svg"
-          htmlWidth="100px"
-          w="100px"
-          objectFit="contain"
-        />
+        >
+          <Img
+            _hover={{
+              cursor: "pointer",
+            }}
+            alt="Logo JW"
+            src="/Logo.svg"
+            htmlWidth="100px"
+            w="100px"
+            objectFit="contain"
+          />
+        </Link>
       </NextLink>
       <Spacer />
       <ButtonGroup spacing={6} size="lg">
