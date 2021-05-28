@@ -68,6 +68,7 @@ export default function Home() {
       </Head>
 
       <Nav />
+
       <Center>
         <Stack
           as="section"

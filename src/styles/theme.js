@@ -35,10 +35,7 @@ const customTheme = extendTheme({
       "::-webkit-scrollbar-corner": {
         bg: "transparent",
       },
-      "button:focus": {
-        boxShadow: "0 0 0 3px #F56235 !important",
-      },
-      "a:focus": {
+      "_focus": {
         boxShadow: "0 0 0 3px #F56235 !important",
       },
       "#nprogress": {
