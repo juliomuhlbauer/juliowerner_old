@@ -22,6 +22,24 @@ import Opacity from "@/components/opacity";
 import Nav from "@/components/nav";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
+const AboutData = [
+  {
+    title: "Co-Founder & CTO at A Rede do Futuro",
+    logo: "RDF.jpg",
+    link: "https://arededofuturo.com.br/",
+  },
+  {
+    title: "Member at Mauá Business Club",
+    logo: "MBC.jpg",
+    link: "https://www.instagram.com/mauabusinessclub/",
+  },
+  {
+    title: "Studying Business Administration at Instituto Mauá de Tecnologia",
+    logo: "IMT.jpg",
+    link: "https://maua.br/",
+  },
+];
+
 const TimelineData = [
   {
     title: "Mauá Business Club",
@@ -88,74 +106,31 @@ export default function Home() {
             >
               Júlio Werner
             </Heading>
-            <Box
-              as={Link}
-              _hover={{
-                bgColor: "rgba(244, 88, 49, 0.1)",
-              }}
-              href="https://arededofuturo.com.br/"
-              isExternal
-              p={4}
-              borderRadius="md"
-              color="jw.500"
-            >
-              <HStack spacing={4}>
-                <Img src="/logo/RDF.jpg" w="54px" />
-                <Heading
-                  textAlign={{ base: "left", md: "left" }}
-                  fontSize={{ base: "xl", md: "2xl" }}
-                  fontWeight="semibold"
-                >
-                  Co-Founder & CTO at A Rede do Futuro
-                </Heading>
-              </HStack>
-            </Box>
-            <Box
-              as={Link}
-              _hover={{
-                bgColor: "rgba(244, 88, 49, 0.1)",
-              }}
-              href="https://www.instagram.com/mauabusinessclub/"
-              isExternal
-              p={4}
-              borderRadius="md"
-              color="jw.500"
-            >
-              <HStack spacing={4}>
-                <Img src="/logo/MBC.jpg" w="54px" />
-                <Heading
-                  textAlign={{ base: "left", md: "left" }}
-                  fontSize={{ base: "xl", md: "2xl" }}
-                  fontWeight="semibold"
-                >
-                  Member at Mauá Business Club
-                </Heading>
-              </HStack>
-            </Box>
-            <Box
-              as={Link}
-              _hover={{
-                bgColor: "rgba(244, 88, 49, 0.1)",
-              }}
-              href="https://maua.br/"
-              isExternal
-              p={4}
-              borderRadius="md"
-              color="jw.500"
-            >
-              <HStack spacing={4}>
-                <Img src="/logo/IMT.jpg" w="54px" />
-
-                <Heading
-                  textAlign={{ base: "left", md: "left" }}
-                  fontSize={{ base: "xl", md: "2xl" }}
-                  fontWeight="semibold"
-                >
-                  Studying Business Administration at Instituto Mauá de
-                  Tecnologia
-                </Heading>
-              </HStack>
-            </Box>
+            {AboutData.map((item, index) => (
+              <Box
+                key={index}
+                as={Link}
+                _hover={{
+                  bgColor: "rgba(244, 88, 49, 0.1)",
+                }}
+                href={item.link}
+                isExternal
+                p={4}
+                borderRadius="md"
+                color="jw.500"
+              >
+                <HStack spacing={4}>
+                  <Img src={"/logo/" + item.logo} w="54px" />
+                  <Heading
+                    textAlign={{ base: "left", md: "left" }}
+                    fontSize={{ base: "xl", md: "2xl" }}
+                    fontWeight="semibold"
+                  >
+                    {item.title}
+                  </Heading>
+                </HStack>
+              </Box>
+            ))}
           </Stack>
           <Img
             borderRadius="xl"

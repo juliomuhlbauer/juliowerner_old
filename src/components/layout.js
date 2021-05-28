@@ -28,7 +28,7 @@ export default function Layout(props) {
           <Spacer />
           <Heading
             as="h1"
-            bgGradient="linear(to-r, pallete.600,pallete.100)"
+            bgGradient="linear(to-r, jw.600,jw.100)"
             bgClip="text"
             fontSize="5xl"
             fontWeight="bold"
@@ -50,7 +50,7 @@ export default function Layout(props) {
               <NextLink href="./">
                 <IconButton
                   size="lg"
-                  colorScheme="pallete"
+                  colorScheme="jw"
                   icon={<ArrowBackIcon />}
                   isRound
                 />
@@ -66,7 +66,7 @@ export default function Layout(props) {
               <NextLink href="./">
                 <IconButton
                   variant="outline"
-                  colorScheme="pallete"
+                  colorScheme="jw"
                   icon={<ArrowBackIcon />}
                 />
               </NextLink>

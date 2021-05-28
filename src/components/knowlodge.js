@@ -38,7 +38,7 @@ export default function Knowlodge(props) {
 
         <Stack>
           {/* <Progress
-            colorScheme="pallete"
+            colorScheme="jw"
             rounded={8}
             w="100%"
             value={props.value}

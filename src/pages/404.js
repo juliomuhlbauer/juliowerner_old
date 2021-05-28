@@ -8,7 +8,7 @@ export default function Error() {
         <Heading
           as="h1"
           textAlign="center"
-          bgGradient="linear(to-r, pallete.600,pallete.100)"
+          bgGradient="linear(to-r, jw.600,jw.100)"
           bgClip="text"
           fontSize={"8xl"}
           fontWeight="extrabold"
@@ -16,7 +16,7 @@ export default function Error() {
           404
         </Heading>
         <NextLink href="/">
-          <Button variant="outline" colorScheme="pallete">
+          <Button variant="outline" colorScheme="jw">
             Homepage
           </Button>
         </NextLink>
