@@ -14,6 +14,9 @@ const customTheme = extendTheme({
         scrollBehavior: "smooth",
         WebkitTapHighlightColor: "transparent",
       },
+      "body": {
+        bg: "gray.800",
+      },
       "::selection": {
         color: "white",
         background: "pallete.500",

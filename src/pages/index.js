@@ -20,6 +20,7 @@ import {
 import Animation from "@/components/animation";
 import Opacity from "@/components/opacity";
 import Nav from "@/components/nav";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const TimelineData = [
   {
@@ -184,28 +185,30 @@ export default function Home() {
             p={4}
             borderRadius="md"
             color="jw.500"
-            w="fit-content"
+            w={{ base: "90%", lg: "50%" }}
             mx="auto"
           >
-            <Box textAlign="right" w={{ base: "150px", md: "200px" }}>
+            <Box textAlign="right" minW="100px" w="100%">
               <Heading
                 fontWeight="semibold"
                 fontSize="xl"
                 color={(!isOdd(index) && "jw.500") || "white"}
               >
-                {(!isOdd(index) && item.title) || item.when}
+                {!isOdd(index) ? item.title : item.when}{" "}
+                {!isOdd(index) && item.link && <ExternalLinkIcon />}
               </Heading>
             </Box>
 
             <Circle size="30px" bg="jw.500" ring="5px" ringColor="gray.800" />
 
-            <Box textAlign="left" w={{ base: "150px", md: "200px" }}>
+            <Box textAlign="left" minW="100px" w="100%">
               <Heading
                 fontWeight="semibold"
                 fontSize="xl"
                 color={(isOdd(index) && "jw.500") || "white"}
               >
-                {(isOdd(index) && item.title) || item.when}
+                {isOdd(index) ? item.title : item.when}{" "}
+                {isOdd(index) && item.link && <ExternalLinkIcon />}
               </Heading>
             </Box>
           </HStack>
