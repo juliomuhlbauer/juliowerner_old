@@ -1,24 +1,15 @@
 import Head from "next/head";
 import {
   Box,
-  Button,
   Center,
   Circle,
   Divider,
-  Flex,
   Heading,
   HStack,
   Img,
   Link,
-  Portal,
-  SimpleGrid,
-  Spacer,
   Stack,
-  Text,
-  useColorMode,
 } from "@chakra-ui/react";
-import Animation from "@/components/animation";
-import Opacity from "@/components/opacity";
 import Nav from "@/components/nav";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
@@ -134,7 +125,7 @@ export default function Home() {
           </Stack>
           <Img
             borderRadius="xl"
-            src="/Picture.png"
+            src="/Picture.webp"
             w={{ base: "300px", md: "350px", lg: "400px" }}
             htmlWidth={{ base: "300px", md: "350px", lg: "400px" }}
             htmlHeight={{ base: "300px", md: "350px", lg: "400px" }}
