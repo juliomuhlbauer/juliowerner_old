@@ -10,10 +10,10 @@
 [[redirects]]
   from = "https://juliowerner.tk/"
   to = "https://juliowerner.com/"
-  status = 200
+  status = 301
   force = true
 [[redirects]]
   from = "https://juliowerner.tk/*"
   to = "https://juliowerner.com/:splat"
-  status = 200
+  status = 301
   force = true
