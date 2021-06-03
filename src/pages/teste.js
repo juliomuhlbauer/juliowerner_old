@@ -20,18 +20,11 @@ export async function getServerSideProps({ req }) {
 }
 
 export default function Teste({ data }) {
-  const router = useRouter();
-  const { isFallback } = router;
-
   return (
     <>
-      {isFallback ? (
-        <Skeleton>
-          <Text>teste</Text>
-        </Skeleton>
-      ) : (
-        <Text>{data.login}</Text>
-      )}
+      {/* <Skeleton isLoaded={data}> */}
+      <Text>{data.login}</Text>
+      {/* </Skeleton> */}
     </>
   );
 }
