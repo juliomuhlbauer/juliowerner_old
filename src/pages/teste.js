@@ -2,8 +2,12 @@ import { Text } from "@chakra-ui/layout";
 import { Skeleton } from "@chakra-ui/skeleton";
 import { useRouter } from "next/router";
 
-export async function getServerSideProps() {
-  const res = await fetch("https://api.github.com/users/julio-werner");
+const isServerReq = (req) => !req.url.startsWith("/_next");
+
+export async function getServerSideProps({ req }) {
+  const res = isServerReq(req)
+    ? await fetch("https://api.github.com/users/julio-werner")
+    : null;
   const data = await res.json();
 
   return {
