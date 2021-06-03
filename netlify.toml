@@ -7,7 +7,3 @@
 [[redirects]]
   from = "/linkedin"
   to = "https://www.linkedin.com/in/julio-werner/"
-[[redirects]]
-  from = "https://juliowerner.tk/"
-  to = "https://juliowerner.com/"
-  status = 301
