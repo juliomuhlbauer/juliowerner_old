@@ -1,14 +1,33 @@
 import { Text } from "@chakra-ui/layout";
 import { Skeleton } from "@chakra-ui/skeleton";
+import { useRouter } from "next/router";
 
-let projects = {
-  loaded: false,
-};
+export async function getServerSideProps() {
+  const res = await fetch("https://api.github.com/users/julio-werner");
+  const data = await res.json();
 
-export default function Teste() {
+  return {
+    props: res
+      ? {
+          data,
+        }
+      : {},
+  };
+}
+
+export default function Teste({ data }) {
+  const router = useRouter();
+  const { isFallback } = router;
+
   return (
-    <Skeleton isLoaded={projects.loaded}>
-      <Text>dsajljdasljk</Text>
-    </Skeleton>
+    <>
+      {isFallback ? (
+        <Skeleton>
+          <Text>teste</Text>
+        </Skeleton>
+      ) : (
+        <Text>{data.login}</Text>
+      )}
+    </>
   );
 }
