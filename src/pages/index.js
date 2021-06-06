@@ -3,6 +3,7 @@ import {
   Box,
   Center,
   Circle,
+  Container,
   Divider,
   Heading,
   HStack,
@@ -18,16 +19,19 @@ const AboutData = [
     title: "Co-Founder & CTO at A Rede do Futuro",
     logo: "RDF.jpg",
     link: "https://arededofuturo.com.br/",
+    alt: "Logo A Rede do Futuro",
   },
   {
     title: "Member at Mauá Business Club",
     logo: "MBC.jpg",
     link: "https://www.instagram.com/mauabusinessclub/",
+    alt: "Logo Mauá Business Club",
   },
   {
     title: "Studying Business Administration at Instituto Mauá de Tecnologia",
     logo: "IMT.jpg",
     link: "https://maua.br/",
+    alt: "Logo Instituto Mauá de Tecnologia",
   },
 ];
 
@@ -75,16 +79,14 @@ export default function Home() {
         <title>Júlio Werner</title>
         <link rel="icon" href="/Logo.svg" />
       </Head>
+      <Container maxW="container.lg" p={0}>
+        <Nav />
 
-      <Nav />
-
-      <Center>
         <Stack
           as="section"
           p={2}
           align="center"
           flexDirection={{ base: "column-reverse", md: "row" }}
-          maxW="5xl"
         >
           <Stack m={4} spacing={4}>
             <Heading
@@ -98,9 +100,8 @@ export default function Home() {
               Júlio Werner
             </Heading>
             {AboutData.map((item, index) => (
-              <Box
+              <Link
                 key={index}
-                as={Link}
                 _hover={{
                   bgColor: "rgba(244, 88, 49, 0.1)",
                 }}
@@ -111,7 +112,13 @@ export default function Home() {
                 color="jw.500"
               >
                 <HStack spacing={4}>
-                  <Img src={"/logo/" + item.logo} w="54px" />
+                  <Img
+                    src={"/logo/" + item.logo}
+                    w="54px"
+                    htmlWidth="54px"
+                    htmlHeight="54px"
+                    alt={item.alt}
+                  />
                   <Heading
                     textAlign={{ base: "left", md: "left" }}
                     fontSize={{ base: "xl", md: "2xl" }}
@@ -120,7 +127,7 @@ export default function Home() {
                     {item.title}
                   </Heading>
                 </HStack>
-              </Box>
+              </Link>
             ))}
           </Stack>
           <Img
@@ -131,65 +138,66 @@ export default function Home() {
             htmlHeight={{ base: "300px", md: "350px", lg: "400px" }}
             objectFit="contain"
             m={4}
+            alt="Photo Júlio Werner"
           />
         </Stack>
-      </Center>
 
-      <Box mt={6} mb={24} py={4} as="section" pos="relative">
-        {TimelineData.map((item, index) => (
-          <HStack
-            key={index}
-            spacing={4}
-            my={6}
-            align="center"
-            justify="center"
-            as={item.link && Link}
-            href={item.link}
-            isExternal={(item.link && true) || false}
-            _hover={{
-              bgColor: "rgba(244, 88, 49, 0.1)",
-            }}
-            p={4}
-            borderRadius="md"
-            color="jw.500"
-            w={{ base: "90%", lg: "50%" }}
-            mx="auto"
-          >
-            <Box textAlign="right" minW="100px" w="100%">
-              <Heading
-                fontWeight="semibold"
-                fontSize="xl"
-                color={(!isOdd(index) && "jw.500") || "white"}
-              >
-                {!isOdd(index) ? item.title : item.when}{" "}
-                {!isOdd(index) && item.link && <ExternalLinkIcon />}
-              </Heading>
-            </Box>
+        <Box mt={6} mb={24} py={4} as="section" pos="relative">
+          {TimelineData.map((item, index) => (
+            <HStack
+              key={index}
+              spacing={4}
+              my={6}
+              align="center"
+              justify="center"
+              as={item.link && Link}
+              href={item.link}
+              isExternal={(item.link && true) || false}
+              _hover={{
+                bgColor: "rgba(244, 88, 49, 0.1)",
+              }}
+              p={4}
+              borderRadius="md"
+              color="jw.500"
+              w={{ base: "95%", lg: "50%" }}
+              mx="auto"
+            >
+              <Box textAlign="right" minW="100px" w="100%">
+                <Heading
+                  fontWeight="semibold"
+                  fontSize="xl"
+                  color={(!isOdd(index) && "jw.500") || "white"}
+                >
+                  {!isOdd(index) ? item.title : item.when}{" "}
+                  {!isOdd(index) && item.link && <ExternalLinkIcon />}
+                </Heading>
+              </Box>
 
-            <Circle size="30px" bg="jw.500" ring="5px" ringColor="gray.800" />
+              <Circle size="30px" bg="jw.500" ring="5px" ringColor="gray.800" />
 
-            <Box textAlign="left" minW="100px" w="100%">
-              <Heading
-                fontWeight="semibold"
-                fontSize="xl"
-                color={(isOdd(index) && "jw.500") || "white"}
-              >
-                {isOdd(index) ? item.title : item.when}{" "}
-                {isOdd(index) && item.link && <ExternalLinkIcon />}
-              </Heading>
-            </Box>
-          </HStack>
-        ))}
+              <Box textAlign="left" minW="100px" w="100%">
+                <Heading
+                  fontWeight="semibold"
+                  fontSize="xl"
+                  color={(isOdd(index) && "jw.500") || "white"}
+                >
+                  {isOdd(index) ? item.title : item.when}{" "}
+                  {isOdd(index) && item.link && <ExternalLinkIcon />}
+                </Heading>
+              </Box>
+            </HStack>
+          ))}
 
-        <Center zIndex={-1} w="100%" pos="absolute" top="0" h="100%">
-          <Divider
-            bgGradient="linear(to-b, jw.600, jw.100)"
-            w="5px"
-            borderRadius="xl"
-            orientation="vertical"
-          />
-        </Center>
-      </Box>
+          <Center zIndex={-1} w="100%" pos="absolute" top="0" h="100%">
+            <Divider
+              bgGradient="linear(to-b, jw.600, jw.100)"
+              w="5px"
+              borderRadius="xl"
+              orientation="vertical"
+            />
+          </Center>
+        </Box>
+      </Container>
     </>
   );
 }

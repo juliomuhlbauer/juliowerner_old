@@ -6,7 +6,7 @@ import NextLink from "next/link";
 
 export default function Nav() {
   return (
-    <Flex as="nav" m="auto" maxW="4xl" align="center" px={4} py={2}>
+    <Flex as="nav" m="auto" align="center" px={8} py={2}>
       <NextLink href="/" passHref>
         <Link
           borderRadius="md"
