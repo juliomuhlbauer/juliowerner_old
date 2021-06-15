@@ -11,12 +11,19 @@ export default function testando() {
           src="/Picture.png"
           width="400"
           height="400"
+          objectFit="contain"
           alt="Photo Júlio Werner"
         />
       </Stack>
       <Stack spacing={4} align="center">
         <Heading>Next Static Image</Heading>
-        <NextImage src={Picture} width="400" height="400" placeholder="blur" />
+        <NextImage
+          src={Picture}
+          width="400"
+          height="400"
+          placeholder="blur"
+          objectFit="contain"
+        />
       </Stack>
       <Stack spacing={4} align="center">
         <Heading>Next Cloudinary</Heading>
@@ -26,6 +33,7 @@ export default function testando() {
           height="400"
           placeholder="blur"
           blurDataURL="https://res.cloudinary.com/arededofuturo/image/upload/e_blur:1000/v1623779297/Foto_de_Perfil.jpg"
+          objectFit="contain"
         />
       </Stack>
     </HStack>
