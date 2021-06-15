@@ -1,6 +1,6 @@
 import NextImage from "next/image";
 import { Heading, Img, Stack, HStack } from "@chakra-ui/react";
-import Picture from "../../public/Picture.webp";
+import Picture from "../../public/Picture.png";
 
 export default function testando() {
   return (
@@ -8,7 +8,7 @@ export default function testando() {
       <Stack spacing={4} align="center">
         <Heading>Chakra Img</Heading>
         <Img
-          src="/Picture.webp"
+          src="/Picture.png"
           width="400"
           height="400"
           alt="Photo Júlio Werner"
