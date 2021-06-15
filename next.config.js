@@ -1,6 +1,6 @@
 module.exports = {
   target: "serverless",
   images: {
-    domains: ["res.cloudinary.com"],
+    domains: ["https://res.cloudinary.com/"],
   },
 };
