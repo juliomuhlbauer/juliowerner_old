@@ -104,6 +104,7 @@ export default function Home() {
                 key={index}
                 _hover={{
                   bgColor: "rgba(244, 88, 49, 0.1)",
+                  textDecoration: "underline",
                 }}
                 href={item.link}
                 isExternal
@@ -144,22 +145,23 @@ export default function Home() {
 
         <Box mt={6} mb={24} py={4} as="section" pos="relative">
           {TimelineData.map((item, index) => (
-            <HStack
+            <Link
               key={index}
+              as={HStack}
               spacing={4}
               my={6}
               align="center"
               justify="center"
-              as={item.link && Link}
               href={item.link}
               isExternal={(item.link && true) || false}
               _hover={{
                 bgColor: "rgba(244, 88, 49, 0.1)",
+                textDecoration: item.link ? "underline" : "none",
               }}
               p={4}
               borderRadius="md"
               color="jw.500"
-              w={{ base: "95%", lg: "50%" }}
+              w={{ base: "95%", lg: "60%" }}
               mx="auto"
             >
               <Box textAlign="right" minW="100px" w="100%">
@@ -185,7 +187,7 @@ export default function Home() {
                   {isOdd(index) && item.link && <ExternalLinkIcon />}
                 </Heading>
               </Box>
-            </HStack>
+            </Link>
           ))}
 
           <Center zIndex={-1} w="100%" pos="absolute" top="0" h="100%">

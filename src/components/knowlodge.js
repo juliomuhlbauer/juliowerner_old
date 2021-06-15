@@ -6,6 +6,7 @@ import {
   Stack,
   Text,
   Heading,
+  Img,
 } from "@chakra-ui/react";
 import Image from "@/components/image";
 
@@ -24,7 +25,7 @@ export default function Knowlodge(props) {
       }}
     >
       <SimpleGrid templateColumns="1fr 2fr" alignItems="center">
-        <Image
+        <Img
           borderRadius={props.radius}
           justifySelf="left"
           src={useColorModeValue(
@@ -34,6 +35,7 @@ export default function Knowlodge(props) {
           h="64px"
           maxW="100px"
           htmlHeight="64px"
+          alt={props.title}
         />
 
         <Stack>
