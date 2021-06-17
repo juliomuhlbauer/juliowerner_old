@@ -1,6 +1,5 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import customTheme from "@/styles/theme";
-import "swiper/swiper-bundle.css";
 import { DefaultSeo } from "next-seo";
 import { useEffect } from "react";
 import { Router, useRouter } from "next/router";

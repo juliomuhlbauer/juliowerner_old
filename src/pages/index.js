@@ -79,9 +79,9 @@ export default function Home() {
         <title>Júlio Werner</title>
         <link rel="icon" href="/Logo.svg" />
       </Head>
+
       <Container maxW="container.lg" p={0}>
         <Nav />
-
         <Stack
           as="section"
           p={2}

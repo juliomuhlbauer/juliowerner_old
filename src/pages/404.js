@@ -1,5 +1,6 @@
 import { Button, Center, Heading, Stack } from "@chakra-ui/react";
 import NextLink from "next/link";
+import Image from "next/image";
 
 export default function Error() {
   return (

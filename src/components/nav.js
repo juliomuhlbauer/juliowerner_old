@@ -27,6 +27,7 @@ export default function Nav() {
         </Link>
       </NextLink>
       <Spacer />
+
       <ButtonGroup spacing={6} size="lg">
         {Links.map((Links, index) => (
           <IconButton
