@@ -5,11 +5,14 @@ import { useEffect } from "react";
 import { Router, useRouter } from "next/router";
 import NProgress from "nprogress";
 import * as gtag from "@/lib/gtag";
+import { GA_TRACKING_ID } from "@/lib/gtag";
 
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import "@fontsource/inter/900.css";
+import Head from "next/head";
+import Script from "next/script";
 
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
@@ -35,6 +38,22 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <link rel="icon" href="/Logo.svg" />
+      </Head>
+
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+      />
+      <Script>
+        {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_TRACKING_ID}', {
+            page_path: window.location.pathname,
+          });`}
+      </Script>
+
       <DefaultSeo
         title={title}
         description={description}

@@ -11,7 +11,7 @@ import {
   Link,
   Stack,
 } from "@chakra-ui/react";
-import Nav from "@/components/nav";
+import Nav from "@/components/Nav";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const AboutData = [
@@ -77,7 +77,7 @@ export default function Home() {
     <>
       <Head>
         <title>Júlio Werner</title>
-        <link rel="icon" href="/Logo.svg" />
+        {/* <link rel="icon" href="/Logo.svg" /> */}
       </Head>
 
       <Container maxW="container.lg" p={0}>
