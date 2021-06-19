@@ -44,15 +44,13 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/Logo.svg" />
       </Head>
 
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_TRACKING_ID}`}
-      />
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${gtag_id}`} />
 
       <Script>
         {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', '${process.env.GA_TRACKING_ID}', {
+          gtag('config', '${gtag_id}', {
             page_path: window.location.pathname,
           });`}
       </Script>
