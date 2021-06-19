@@ -10,7 +10,7 @@ import {
   Link,
   Stack,
 } from "@chakra-ui/react";
-import Nav from "@/components/Nav";
+import Nav from "@/components/Navigation";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const AboutData = [
