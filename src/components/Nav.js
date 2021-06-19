@@ -21,7 +21,9 @@ export default function Nav() {
             alt="Logo JW"
             src="/Logo.svg"
             htmlWidth="100px"
+            htmlHeight="100px"
             w="100px"
+            h="100px"
             objectFit="contain"
           />
         </Link>

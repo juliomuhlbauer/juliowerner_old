@@ -110,6 +110,7 @@ export default function Home() {
                   <Img
                     src={"/logo/" + item.logo}
                     w="54px"
+                    h="54px"
                     htmlWidth="54px"
                     htmlHeight="54px"
                     alt={item.alt}
@@ -129,8 +130,8 @@ export default function Home() {
             borderRadius="xl"
             src="/Picture.webp"
             w={{ base: "300px", md: "350px", lg: "400px" }}
-            htmlWidth={{ base: "300px", md: "350px", lg: "400px" }}
-            htmlHeight={{ base: "300px", md: "350px", lg: "400px" }}
+            htmlWidth="400px"
+            htmlHeight="400px"
             objectFit="contain"
             m={4}
             alt="Photo Júlio Werner"
