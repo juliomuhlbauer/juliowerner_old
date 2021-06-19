@@ -1,4 +1,3 @@
-import Head from "next/head";
 import {
   Box,
   Center,
@@ -75,11 +74,6 @@ function isOdd(num) {
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Júlio Werner</title>
-        {/* <link rel="icon" href="/Logo.svg" /> */}
-      </Head>
-
       <Container maxW="container.lg" p={0}>
         <Nav />
         <Stack

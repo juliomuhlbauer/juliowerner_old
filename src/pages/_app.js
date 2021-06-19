@@ -7,12 +7,13 @@ import NProgress from "nprogress";
 import * as gtag from "@/lib/gtag";
 import { GA_TRACKING_ID } from "@/lib/gtag";
 
+import Head from "next/head";
+import Script from "next/script";
+
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import "@fontsource/inter/900.css";
-import Head from "next/head";
-import Script from "next/script";
 
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
@@ -39,12 +40,14 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title>Júlio Werner</title>
         <link rel="icon" href="/Logo.svg" />
       </Head>
 
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
       />
+
       <Script>
         {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
