@@ -142,46 +142,55 @@ export default function Home() {
           {TimelineData.map((item, index) => (
             <Link
               key={index}
-              as={HStack}
-              spacing={4}
-              my={6}
-              align="center"
-              justify="center"
               href={item.link}
               isExternal={(item.link && true) || false}
+              color="jw.500"
               _hover={{
-                bgColor: "rgba(244, 88, 49, 0.1)",
                 textDecoration: item.link ? "underline" : "none",
               }}
-              p={4}
-              borderRadius="md"
-              color="jw.500"
-              w={{ base: "95%", lg: "60%" }}
-              mx="auto"
             >
-              <Box textAlign="right" minW="100px" w="100%">
-                <Heading
-                  fontWeight="semibold"
-                  fontSize="xl"
-                  color={(!isOdd(index) && "jw.500") || "white"}
-                >
-                  {!isOdd(index) ? item.title : item.when}{" "}
-                  {!isOdd(index) && item.link && <ExternalLinkIcon />}
-                </Heading>
-              </Box>
+              <HStack
+                _hover={{
+                  bgColor: "rgba(244, 88, 49, 0.1)",
+                }}
+                p={4}
+                borderRadius="md"
+                w={{ base: "95%", lg: "60%" }}
+                mx="auto"
+                spacing={4}
+                my={6}
+                align="center"
+                justify="center"
+              >
+                <Box textAlign="right" minW="100px" w="100%">
+                  <Heading
+                    fontWeight="semibold"
+                    fontSize="xl"
+                    color={(!isOdd(index) && "jw.500") || "white"}
+                  >
+                    {!isOdd(index) ? item.title : item.when}{" "}
+                    {!isOdd(index) && item.link && <ExternalLinkIcon />}
+                  </Heading>
+                </Box>
 
-              <Circle size="30px" bg="jw.500" ring="5px" ringColor="gray.800" />
+                <Circle
+                  size="30px"
+                  bg="jw.500"
+                  ring="5px"
+                  ringColor="gray.800"
+                />
 
-              <Box textAlign="left" minW="100px" w="100%">
-                <Heading
-                  fontWeight="semibold"
-                  fontSize="xl"
-                  color={(isOdd(index) && "jw.500") || "white"}
-                >
-                  {isOdd(index) ? item.title : item.when}{" "}
-                  {isOdd(index) && item.link && <ExternalLinkIcon />}
-                </Heading>
-              </Box>
+                <Box textAlign="left" minW="100px" w="100%">
+                  <Heading
+                    fontWeight="semibold"
+                    fontSize="xl"
+                    color={(isOdd(index) && "jw.500") || "white"}
+                  >
+                    {isOdd(index) ? item.title : item.when}{" "}
+                    {isOdd(index) && item.link && <ExternalLinkIcon />}
+                  </Heading>
+                </Box>
+              </HStack>
             </Link>
           ))}
 
