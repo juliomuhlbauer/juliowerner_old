@@ -14,10 +14,13 @@ import Animation from "@/components/Animation";
 export default function Links({ links }) {
   return (
     <Box as="section" my={4} w="100%">
-      <Heading my={8} fontWeight="extrabold" fontSize="5xl" color="jw.500">
-        Links
-      </Heading>
-      <Divider />
+      <Animation>
+        <Heading my={8} fontWeight="extrabold" fontSize="5xl" color="jw.500">
+          Links
+        </Heading>
+        <Divider />
+      </Animation>
+
       <Stack display="block" spacing={2}>
         {links.map((link) => (
           <Animation key={link.id}>
