@@ -15,10 +15,12 @@ export default function Links({ links }) {
   return (
     <Box as="section" my={4} w="100%">
       <Animation>
-        <Heading my={8} fontWeight="extrabold" fontSize="5xl" color="jw.500">
-          Links
-        </Heading>
-        <Divider />
+        <Box my={8}>
+          <Heading my={2} fontWeight="extrabold" fontSize="5xl" color="jw.500">
+            Links
+          </Heading>
+          <Divider />
+        </Box>
       </Animation>
 
       <Stack display="block" spacing={2}>
@@ -30,8 +32,8 @@ export default function Links({ links }) {
                 // textDecoration: "underline",
               }}
               role="group"
-              p={4}
-              m={2}
+              p={1}
+              // m={2}
               borderRadius="md"
               href={link.properties.Link?.url}
               isExternal
@@ -39,7 +41,7 @@ export default function Links({ links }) {
             >
               <HStack spacing={4}>
                 <Img
-                  maxW="100px"
+                  maxW="86px"
                   w="100%"
                   src={link.properties.Image.rich_text[0]?.text.content}
                   alt={link.properties.Name.title[0]?.plain_text + "Image"}
@@ -47,12 +49,12 @@ export default function Links({ links }) {
                 />
                 <Stack>
                   <Heading
-                    fontSize="4xl"
+                    fontSize={{ base: "3xl", md: "4xl" }}
                     _groupHover={{ textDecoration: "underline" }}
                   >
                     {link.properties.Name.title[0]?.plain_text}
                   </Heading>
-                  <Text fontSize="xl" color="gray.200">
+                  <Text fontSize={{ base: "lg", md: "xl" }} color="gray.200">
                     {link.properties.Description.rich_text[0]?.text.content}
                   </Text>
                 </Stack>

@@ -25,23 +25,41 @@ function isOdd(num) {
 
 export default function About() {
   return (
-    <Box as="section" w="100%" my={4}>
-      <Animation>
-        <Heading my={8} fontWeight="extrabold" fontSize="5xl" color="jw.500">
-          About
-        </Heading>
-        <Divider />
-        <Resume />
-      </Animation>
+    <>
+      <Box as="section" w="100%" my={4}>
+        <Animation>
+          <Box my={8}>
+            <Heading
+              my={2}
+              fontWeight="extrabold"
+              fontSize="5xl"
+              color="jw.500"
+            >
+              About
+            </Heading>
+            <Divider />
+          </Box>
+          <Resume />
+        </Animation>
+      </Box>
 
-      <Animation>
-        <Heading my={8} fontWeight="extrabold" fontSize="5xl" color="jw.500">
-          Timeline
-        </Heading>
-        <Divider />
-        <Timeline />
-      </Animation>
-    </Box>
+      <Box as="section" w="100%" my={4}>
+        <Animation>
+          <Box my={8}>
+            <Heading
+              my={2}
+              fontWeight="extrabold"
+              fontSize="5xl"
+              color="jw.500"
+            >
+              Timeline
+            </Heading>
+            <Divider />
+          </Box>
+          <Timeline />
+        </Animation>
+      </Box>
+    </>
   );
 }
 
@@ -69,7 +87,7 @@ const AboutData = [
 function Resume() {
   return (
     <Stack align="center" flexDirection={{ base: "column-reverse", md: "row" }}>
-      <Stack m={4} spacing={4}>
+      <Stack m={4} spacing={6}>
         <Heading
           as="h1"
           textAlign="center"
@@ -89,7 +107,7 @@ function Resume() {
             }}
             href={item.link}
             isExternal
-            p={4}
+            p={2}
             borderRadius="md"
             color="jw.500"
           >
@@ -159,7 +177,7 @@ const TimelineData = [
 
 function Timeline() {
   return (
-    <Stack mt={6} mb={24} py={4} pos="relative" spacing={0} mx="auto" w="100%">
+    <Stack my={6} py={12} pos="relative" spacing={8}>
       {TimelineData.map((item, index) => (
         <Link
           key={index}
@@ -169,13 +187,14 @@ function Timeline() {
           isExternal={(item.link && true) || false}
           color="jw.500"
           p={2}
+          py={4}
           _hover={{
             bgColor: "rgba(244, 88, 49, 0.1)",
             textDecoration: item.link ? "underline" : "none",
           }}
           borderRadius="md"
         >
-          <HStack mx="auto" spacing={4} my={6} align="center" justify="center">
+          <HStack mx="auto" spacing={4} align="center" justify="center">
             <Box textAlign="right" minW="100px" w="100%">
               <Heading
                 fontWeight="semibold"

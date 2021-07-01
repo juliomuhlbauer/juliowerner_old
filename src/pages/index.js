@@ -9,6 +9,7 @@ import {
   Img,
   Link,
   Stack,
+  Text,
 } from "@chakra-ui/react";
 import Nav from "@/components/Nav";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
@@ -29,6 +30,11 @@ export default function Home({ links }) {
         <Links links={links} />
         <About />
       </Container>
+      <Center minH="250px" as="footer">
+        <Text fontSize="lg" align="center">
+          Júlio Werner © {new Date().getFullYear()}
+        </Text>
+      </Center>
     </>
   );
 }
