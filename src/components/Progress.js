@@ -1,7 +1,7 @@
 import { Box, Progress, useColorModeValue, useToken } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 
-const ReadingProgress = ({ target }) => {
+const PageProgress = ({ target }) => {
   const [jw500] = useToken("colors", ["jw.500"]);
 
   const [readingProgress, setReadingProgress] = useState(0);
@@ -49,4 +49,4 @@ const ReadingProgress = ({ target }) => {
   );
 };
 
-export default ReadingProgress;
+export default PageProgress;

@@ -4,7 +4,7 @@ import { Box, Container, Flex, Link, Spacer, Text } from "@chakra-ui/layout";
 import { Links } from "@/data/links";
 import NextLink from "next/link";
 import { useToken } from "@chakra-ui/system";
-import Progress from "@/components/Progress";
+import PageProgress from "@/components/Progress";
 
 export default function Nav({ target }) {
   const [jw500] = useToken("colors", ["jw.500"]);
@@ -61,7 +61,7 @@ export default function Nav({ target }) {
           </ButtonGroup>
         </Flex>
       </Container>
-      <Progress target={target} />
+      <PageProgress target={target} />
     </Box>
   );
 }

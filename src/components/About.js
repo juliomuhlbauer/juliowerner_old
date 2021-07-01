@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react";
 import Nav from "@/components/Nav";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import Animation from "./Animation";
+import Animation from "@/components/Animation";
 
 function isOdd(num) {
   if (num % 2 == 1) {
@@ -167,12 +167,10 @@ function Timeline() {
           cursor={item.link ? "pointer" : "default"}
           isExternal={(item.link && true) || false}
           color="jw.500"
-          _hover={{
-            textDecoration: item.link ? "underline" : "none",
-          }}
           p={2}
           _hover={{
             bgColor: "rgba(244, 88, 49, 0.1)",
+            textDecoration: item.link ? "underline" : "none",
           }}
           borderRadius="md"
         >

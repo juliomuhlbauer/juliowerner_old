@@ -39,6 +39,7 @@ export default function Links({ links }) {
                   maxW="100px"
                   w="100%"
                   src={link.properties.Image.rich_text[0]?.text.content}
+                  alt={link.properties.Name.title[0]?.plain_text + "Image"}
                 />
                 <Stack>
                   <Heading
