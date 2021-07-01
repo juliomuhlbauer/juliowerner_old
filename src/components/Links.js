@@ -37,12 +37,13 @@ export default function Links({ links }) {
               isExternal
               color="jw.500"
             >
-              <HStack>
+              <HStack spacing={4}>
                 <Img
                   maxW="100px"
                   w="100%"
                   src={link.properties.Image.rich_text[0]?.text.content}
                   alt={link.properties.Name.title[0]?.plain_text + "Image"}
+                  borderRadius="xl"
                 />
                 <Stack>
                   <Heading

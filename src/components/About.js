@@ -101,6 +101,7 @@ function Resume() {
                 htmlWidth="54px"
                 htmlHeight="54px"
                 alt={item.alt}
+                borderRadius="md"
               />
               <Heading
                 textAlign={{ base: "left", md: "left" }}
