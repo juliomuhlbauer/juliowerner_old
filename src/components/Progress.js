@@ -12,8 +12,7 @@ const PageProgress = ({ target }) => {
     }
 
     const element = target.current;
-    const totalHeight =
-      element.clientHeight - element.offsetTop - window.innerHeight;
+    const totalHeight = element.clientHeight;
     const windowScrollTop =
       window.pageYOffset ||
       document.documentElement.scrollTop ||
