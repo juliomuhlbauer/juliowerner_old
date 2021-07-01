@@ -1,27 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:url(#SVGID_1_);}
-	.st1{fill:url(#SVGID_2_);}
-</style>
-<g>
-	<g>
-		
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="33.8" y1="577.4" x2="1056.0032" y2="577.4" gradientTransform="matrix(1 0 0 -1 0 1080)">
-			<stop  offset="0" style="stop-color:#FF554B"/>
-			<stop  offset="1" style="stop-color:#F9C529"/>
-		</linearGradient>
-		<path class="st0" d="M219.2,255.5v343.3c0,83.2-67.7,150.9-150.9,150.9H33.8V626.4h34.5c14.8,0,26.8-12,26.8-26.8V256.2
-			L219.2,255.5z"/>
-		
-			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="33.8379" y1="577.05" x2="1056.041" y2="577.05" gradientTransform="matrix(1 0 0 -1 0 1080)">
-			<stop  offset="0" style="stop-color:#FF554B"/>
-			<stop  offset="1" style="stop-color:#F9C529"/>
-		</linearGradient>
-		<path class="st1" d="M1056,256.2L848,749.7H714.1l-43-101.5l-43,101.5H494.2l-208-493.5h133.9l141,334.9l43-101.5l-98-233.3H640
-			l141,334.9l141-334.9L1056,256.2L1056,256.2z"/>
-	</g>
-</g>
+<svg width="297" height="144" viewBox="0 0 297 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M54.3008 0.782227V99.9068C54.3008 123.938 34.7518 143.487 10.7205 143.487H0.756348V107.871H10.7205C14.9958 107.871 18.4436 104.423 18.4436 100.148V0.954617L54.3008 0.782227Z" fill="url(#paint0_linear)"/>
+<path d="M295.889 0.954651L235.828 143.453H197.178L184.766 114.146L172.354 143.453H133.669L73.6431 0.954651H112.293L153.012 97.6657L165.424 68.3594L137.117 0.989131H175.767L216.486 97.7002L257.205 0.989131L295.889 0.954651Z" fill="url(#paint1_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="0.756348" y1="72.1347" x2="295.893" y2="72.1347" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF554B"/>
+<stop offset="1" stop-color="#F9C529"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="0.766843" y1="72.2037" x2="295.904" y2="72.2037" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF554B"/>
+<stop offset="1" stop-color="#F9C529"/>
+</linearGradient>
+</defs>
 </svg>

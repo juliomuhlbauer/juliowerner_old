@@ -1,48 +1,67 @@
 import { Button, ButtonGroup, IconButton } from "@chakra-ui/button";
 import { Img } from "@chakra-ui/image";
-import { Flex, Link, Spacer } from "@chakra-ui/layout";
+import { Box, Container, Flex, Link, Spacer, Text } from "@chakra-ui/layout";
 import { Links } from "@/data/links";
 import NextLink from "next/link";
+import { useToken } from "@chakra-ui/system";
+import Progress from "@/components/Progress";
 
-export default function Nav() {
+export default function Nav({ target }) {
+  const [jw500] = useToken("colors", ["jw.500"]);
+  const [gray800] = useToken("colors", ["gray.800"]);
+
   return (
-    <Flex as="nav" m="auto" align="center" px={8} py={2}>
-      <NextLink href="/" passHref>
-        <Link
-          borderRadius="md"
-          _hover={{
-            bgColor: "rgba(244, 88, 49, 0.1)",
-          }}
-        >
-          <Img
-            _hover={{
-              cursor: "pointer",
-            }}
-            alt="Logo JW"
-            src="/Logo.svg"
-            htmlWidth="100px"
-            htmlHeight="100px"
-            w="100px"
-            h="100px"
-            objectFit="contain"
-          />
-        </Link>
-      </NextLink>
-      <Spacer />
+    <Box
+      zIndex="modal"
+      as="nav"
+      pos="sticky"
+      top={0}
+      style={{
+        backdropFilter: "saturate(100%) blur(12px)",
+        backgroundColor: `${gray800}99`,
+      }}
+      // borderBottom="2px"
+      // borderColor={`${jw500}25`}
+    >
+      <Container maxW="container.lg">
+        <Flex align="center" py={2}>
+          <NextLink href="/" passHref>
+            <Link
+              borderRadius="md"
+              _hover={{
+                bgColor: `${jw500}25`,
+              }}
+              p={2}
+            >
+              <Img
+                _hover={{
+                  cursor: "pointer",
+                }}
+                alt="Logo JW"
+                src="/Logo.svg"
+                h="52px"
+                objectFit="contain"
+              />
+            </Link>
+          </NextLink>
+          <Spacer />
 
-      <ButtonGroup spacing={6} size="lg">
-        {Links.map((Links, index) => (
-          <IconButton
-            colorScheme="jw"
-            variant="ghost"
-            key={index}
-            as={Link}
-            href={Links.link}
-            isExternal
-            icon={Links.icon}
-          />
-        ))}
-      </ButtonGroup>
-    </Flex>
+          <ButtonGroup spacing={6} size="lg">
+            {Links.map((Links, index) => (
+              <IconButton
+                colorScheme="jw"
+                variant="ghost"
+                key={index}
+                as={Link}
+                href={Links.link}
+                isExternal
+                icon={Links.icon}
+              />
+            ))}
+          </ButtonGroup>
+        </Flex>
+      </Container>
+      <Progress target={target} />
+    </Box>
   );
 }

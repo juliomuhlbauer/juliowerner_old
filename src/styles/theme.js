@@ -44,15 +44,15 @@ const components = {
 
 const styles = {
   global: {
-    "html": {
+    html: {
       scrollBehavior: "smooth",
       WebkitTapHighlightColor: "transparent",
     },
-    "body": {
+    body: {
       bg: "gray.800",
     },
-    "_selection": {
-      color: "white",
+    _selection: {
+      textColor: "white",
       background: "jw.500",
     },
     "::-webkit-scrollbar": {
