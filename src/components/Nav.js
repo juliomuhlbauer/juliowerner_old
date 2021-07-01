@@ -20,8 +20,6 @@ export default function Nav({ target }) {
         backdropFilter: "saturate(100%) blur(12px)",
         backgroundColor: `${gray800}99`,
       }}
-      // borderBottom="2px"
-      // borderColor={`${jw500}25`}
     >
       <Container maxW="container.lg">
         <Flex align="center" py={2}>
@@ -39,7 +37,7 @@ export default function Nav({ target }) {
                 }}
                 alt="Logo JW"
                 src="/Logo.svg"
-                h="52px"
+                h={{ base: "40px", md: "52px" }}
                 objectFit="contain"
               />
             </Link>

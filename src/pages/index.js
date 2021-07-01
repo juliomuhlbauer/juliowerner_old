@@ -21,8 +21,6 @@ import { getDatabase } from "@/lib/notion";
 export default function Home({ links }) {
   const target = React.createRef();
 
-  console.log(links);
-
   return (
     <>
       <Nav target={target} />
