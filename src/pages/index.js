@@ -29,12 +29,12 @@ export default function Home({ links }) {
         {/* <Intro /> */}
         <Links links={links} />
         <About />
+        <Center minH="250px" as="footer">
+          <Text fontSize="lg" align="center">
+            Júlio Werner © {new Date().getFullYear()}
+          </Text>
+        </Center>
       </Container>
-      <Center minH="250px" as="footer">
-        <Text fontSize="lg" align="center">
-          Júlio Werner © {new Date().getFullYear()}
-        </Text>
-      </Center>
     </>
   );
 }
