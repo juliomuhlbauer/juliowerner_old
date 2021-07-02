@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-import { Box, Stack } from "@chakra-ui/layout";
+import React, { useEffect } from "react";
+import { Stack } from "@chakra-ui/layout";
 
 const MotionBox = motion(Stack);
 
@@ -12,6 +12,9 @@ export default function Animation({ children }) {
   useEffect(() => {
     if (inView) {
       controls.start("visible");
+    }
+    if (!inView) {
+      controls.start("hidden");
     }
   }, [controls, inView]);
 
