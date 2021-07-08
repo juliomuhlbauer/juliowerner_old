@@ -60,6 +60,8 @@ function MyApp({ Component, pageProps }) {
           `}
       </Script>
 
+      <Script src="https://cdn.splitbee.io/sb.js" />
+
       <DefaultSeo
         title={title}
         description={description}
