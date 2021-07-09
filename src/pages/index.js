@@ -1,18 +1,5 @@
-import {
-  Box,
-  Center,
-  Circle,
-  Container,
-  Divider,
-  Heading,
-  HStack,
-  Img,
-  Link,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
+import { Center, Container, Text } from "@chakra-ui/react";
 import Nav from "@/components/Nav";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 import About from "@/components/About";
 import Links from "@/components/Links";
 import Intro from "@/components/Intro";

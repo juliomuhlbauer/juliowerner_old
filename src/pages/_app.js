@@ -1,5 +1,5 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import customTheme from "@/styles/theme";
+import theme from "@/styles";
 import { DefaultSeo } from "next-seo";
 import { useEffect } from "react";
 import { Router, useRouter } from "next/router";
@@ -85,7 +85,7 @@ function MyApp({ Component, pageProps }) {
           cardType: "summary_large_image",
         }}
       />
-      <ChakraProvider resetCSS theme={customTheme}>
+      <ChakraProvider resetCSS theme={theme}>
         <Component {...pageProps} />
       </ChakraProvider>
     </>
