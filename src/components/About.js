@@ -14,6 +14,7 @@ import {
 import Nav from "@/components/Nav";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import Animation from "@/components/Animation";
+import { Image } from "./Image";
 
 function isOdd(num) {
   if (num % 2 == 1) {
@@ -132,15 +133,17 @@ function Resume() {
           </Link>
         ))}
       </Stack>
-      <Img
-        borderRadius="xl"
-        src="/Picture.webp"
-        w={{ base: "300px", md: "350px", lg: "400px" }}
-        htmlWidth="400px"
-        htmlHeight="400px"
+
+      <Image
+        width="400px"
+        height="400px"
         objectFit="contain"
+        w={{ base: "300px", md: "350px", lg: "400px" }}
+        src="/Picture.png"
+        alt="Júlio Werner"
+        placeholder="blur"
+        borderRadius="xl"
         m={4}
-        alt="Photo Júlio Werner"
       />
     </Stack>
   );
