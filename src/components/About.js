@@ -15,6 +15,7 @@ import Nav from "@/components/Nav";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import Animation from "@/components/Animation";
 import { Image } from "./Image";
+import Picture from "public/Picture.png";
 
 function isOdd(num) {
   if (num % 2 == 1) {
@@ -139,7 +140,7 @@ function Resume() {
         height="400px"
         objectFit="contain"
         w={{ base: "300px", md: "350px", lg: "400px" }}
-        src="/Picture.png"
+        src={Picture}
         alt="Júlio Werner"
         placeholder="blur"
         borderRadius="xl"
