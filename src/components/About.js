@@ -79,7 +79,7 @@ const AboutData = [
     alt: "Logo Mauá Business Club",
   },
   {
-    title: "Studying Business Administration at Instituto Mauá de Tecnologia",
+    title: "Studying Business Administration",
     logo: "IMT.jpg",
     link: "https://maua.br/",
     alt: "Logo Instituto Mauá de Tecnologia",
