@@ -67,7 +67,7 @@ export default function About() {
 
 const AboutData = [
   {
-    title: "Co-Founder & CTO at A Rede do Futuro",
+    title: "Making A Rede do Futuro",
     logo: "RDF.jpg",
     link: "https://arededofuturo.com.br/",
     alt: "Logo A Rede do Futuro",
